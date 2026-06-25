@@ -1,0 +1,209 @@
+[
+    {
+        "symbol": "ILP",
+        "company_name": "Interloop Limited",
+        "announcement_date": "2019-04-22",
+        "raw_text": "FINANCIAL RESULT FOR THE NINE MONTHS ENDED 31/03/2019\n(UNCONSOLIDATED) PROFIT/LOSS BEFORE TAXATION RS. IN MILLION 3,479.970\n(UNCONSOLIDATED) PROFIT/LOSS AFTER TAXATION RS. IN MILLION 3,310.977\n(UNCONSOLIDATED) EPS = 4.3429\n(CONSOLIDATED) PROFIT/LOSS BEFORE TAXATION RS. IN MILLION 3,409.473\n(CONSOLIDATED) PROFIT/LOSS AFTER TAXATION RS. IN MILLION 3,240.403\n(CONSOLIDATED) EPS = 4.2503",
+        "financial_results": [
+            {
+                "result_type": "UNCONSOLIDATED",
+                "result_period": "NINE MONTHS",
+                "period_ending": "2019-03-31",
+                "profit_before_tax_mln": "3479.970",
+                "profit_after_tax_mln": "3310.977",
+                "eps": "4.3429"
+            },
+            {
+                "result_type": "CONSOLIDATED",
+                "result_period": "NINE MONTHS",
+                "period_ending": "2019-03-31",
+                "profit_before_tax_mln": "3409.473",
+                "profit_after_tax_mln": "3240.403",
+                "eps": "4.2503"
+            }
+        ],
+        "corporate_actions": null
+    },
+    {
+        "symbol": "ILP",
+        "company_name": "Interloop Limited",
+        "announcement_date": "2019-06-11",
+        "raw_text": "DIVIDEND = 12.50%\nBOOK CLOSURE FROM 26/06/2019\nBOOK CLOSURE TO 02/07/2019",
+        "financial_results": [],
+        "corporate_actions": {
+            "dividend": "12.50%",
+            "bonus": null,
+            "book_closure_start": "2019-06-26",
+            "book_closure_end": "2019-07-02",
+            "agm_date": null
+        }
+    },
+    {
+        "symbol": "ILP",
+        "company_name": "Interloop Limited",
+        "announcement_date": "2019-09-24",
+        "raw_text": "FINANCIAL RESULT FOR THE YEAR ENDED 30/06/2019\n(UNCONSOLIDATED) PROFIT/LOSS BEFORE TAXATION RS. IN MILLION 5,420.983\n(UNCONSOLIDATED) PROFIT/LOSS AFTER TAXATION RS. IN MILLION 5,194.767\n(UNCONSOLIDATED) EPS = 6.6706\n(CONSOLIDATED) PROFIT/LOSS BEFORE TAXATION RS. IN MILLION 5,286.811\n(CONSOLIDATED) PROFIT/LOSS AFTER TAXATION RS. IN MILLION 5,060.551\n(CONSOLIDATED) EPS = 6.4983\nDIVIDEND = 17.5% (F)\nANNUAL GENERAL MEETING WILL BE HELD ON 14/10/2019\nBOOK CLOSURE FROM 07/10/2019\nBOOK CLOSURE TO 14/10/2019",
+        "financial_results": [
+            {
+                "result_type": "UNCONSOLIDATED",
+                "result_period": "YEAR",
+                "period_ending": "2019-06-30",
+                "profit_before_tax_mln": "5420.983",
+                "profit_after_tax_mln": "5194.767",
+                "eps": "6.6706"
+            },
+            {
+                "result_type": "CONSOLIDATED",
+                "result_period": "YEAR",
+                "period_ending": "2019-06-30",
+                "profit_before_tax_mln": "5286.811",
+                "profit_after_tax_mln": "5060.551",
+                "eps": "6.4983"
+            }
+        ],
+        "corporate_actions": {
+            "dividend": "17.5% (F)",
+            "bonus": null,
+            "book_closure_start": "2019-10-07",
+            "book_closure_end": "2019-10-14",
+            "agm_date": "2019-10-14"
+        }
+    },
+    {
+        "symbol": "ILP",
+        "company_name": "Interloop Limited",
+        "announcement_date": "2019-10-28",
+        "raw_text": "FINANCIAL RESULT FOR THE FIRST QUARTER ENDED 30/09/2019\n(UNCONSOLIDATED) PROFIT/LOSS BEFORE TAXATION RS. IN MILLION 689.979\n(UNCONSOLIDATED) PROFIT/LOSS AFTER TAXATION RS. IN MILLION 618.992\n(UNCONSOLIDATED) EPS = 0.7097\n(CONSOLIDATED) PROFIT/LOSS BEFORE TAXATION RS. IN MILLION 562.800\n(CONSOLIDATED) PROFIT/LOSS AFTER TAXATION RS. IN MILLION 491.075\n(CONSOLIDATED) EPS = 0.5630",
+        "financial_results": [
+            {
+                "result_type": "UNCONSOLIDATED",
+                "result_period": "FIRST QUARTER",
+                "period_ending": "2019-09-30",
+                "profit_before_tax_mln": "689.979",
+                "profit_after_tax_mln": "618.992",
+                "eps": "0.7097"
+            },
+            {
+                "result_type": "CONSOLIDATED",
+                "result_period": "FIRST QUARTER",
+                "period_ending": "2019-09-30",
+                "profit_before_tax_mln": "562.800",
+                "profit_after_tax_mln": "491.075",
+                "eps": "0.5630"
+            }
+        ],
+        "corporate_actions": null
+    },
+    {
+        "symbol": "ILP",
+        "company_name": "Interloop Limited",
+        "announcement_date": "2020-02-14",
+        "raw_text": "FINANCIAL RESULT FOR THE HALF YEAR ENDED 31/12/2019\n(UNCONSOLIDATED) PROFIT/LOSS BEFORE TAXATION RS. IN MILLION 1,678.705\n(UNCONSOLIDATED) PROFIT/LOSS AFTER TAXATION RS. IN MILLION 1,531.226\n(UNCONSOLIDATED) EPS = 1.7556\n(CONSOLIDATED) PROFIT/LOSS BEFORE TAXATION RS. IN MILLION 1,382.840\n(CONSOLIDATED) PROFIT/LOSS AFTER TAXATION RS. IN MILLION 1,233.292\n(CONSOLIDATED) EPS = 1.414\nDIVIDEND = 10%(i)\nBOOK CLOSURE FROM 03/03/2020\nBOOK CLOSURE TO 10/03/2020",
+        "financial_results": [
+            {
+                "result_type": "UNCONSOLIDATED",
+                "result_period": "HALF YEAR",
+                "period_ending": "2019-12-31",
+                "profit_before_tax_mln": "1678.705",
+                "profit_after_tax_mln": "1531.226",
+                "eps": "1.7556"
+            },
+            {
+                "result_type": "CONSOLIDATED",
+                "result_period": "HALF YEAR",
+                "period_ending": "2019-12-31",
+                "profit_before_tax_mln": "1382.840",
+                "profit_after_tax_mln": "1233.292",
+                "eps": "1.414"
+            }
+        ],
+        "corporate_actions": {
+            "dividend": "10%(i)",
+            "bonus": null,
+            "book_closure_start": "2020-03-03",
+            "book_closure_end": "2020-03-10",
+            "agm_date": null
+        }
+    },
+    {
+        "symbol": "ILP",
+        "company_name": "Interloop Limited",
+        "announcement_date": "2020-04-21",
+        "raw_text": "FINANCIAL RESULT FOR THE NINE MONTHS ENDED 31/03/2020\n(UNCONSOLIDATED) PROFIT/LOSS BEFORE TAXATION RS. IN MILLION 2,391.457\n(UNCONSOLIDATED) PROFIT/LOSS AFTER TAXATION RS. IN MILLION 2,162.096\n(UNCONSOLIDATED) EPS = 2.4789\n(CONSOLIDATED) PROFIT/LOSS BEFORE TAXATION RS. IN MILLION 1,897.931\n(CONSOLIDATED) PROFIT/LOSS AFTER TAXATION RS. IN MILLION 1,664.498\n(CONSOLIDATED) EPS = 1.9084",
+        "financial_results": [
+            {
+                "result_type": "UNCONSOLIDATED",
+                "result_period": "NINE MONTHS",
+                "period_ending": "2020-03-31",
+                "profit_before_tax_mln": "2391.457",
+                "profit_after_tax_mln": "2162.096",
+                "eps": "2.4789"
+            },
+            {
+                "result_type": "CONSOLIDATED",
+                "result_period": "NINE MONTHS",
+                "period_ending": "2020-03-31",
+                "profit_before_tax_mln": "1897.931",
+                "profit_after_tax_mln": "1664.498",
+                "eps": "1.9084"
+            }
+        ],
+        "corporate_actions": null
+    },
+    {
+        "symbol": "ILP",
+        "company_name": "Interloop Limited",
+        "announcement_date": "2020-09-17",
+        "raw_text": "FINANCIAL RESULT FOR THE YEAR ENDED 30/06/2020\n(UNCONSOLIDATED) PROFIT/LOSS BEFORE TAXATION RS. IN MILLION 2,115.831\n(UNCONSOLIDATED) PROFIT/LOSS AFTER TAXATION RS. IN MILLION 1,796.403\n(UNCONSOLIDATED) EPS = 2.06\n(CONSOLIDATED) PROFIT/LOSS BEFORE TAXATION RS. IN MILLION 1,450.434\n(CONSOLIDATED) PROFIT/LOSS AFTER TAXATION RS. IN MILLION 1,125.927\n(CONSOLIDATED) EPS = 1.29\nDIVIDEND = 10%(F)\nANNUAL GENERAL MEETING WILL BE HELD ON 15/10/2020\nBOOK CLOSURE FROM 08/10/2020\nBOOK CLOSURE TO 15/10/2020",
+        "financial_results": [
+            {
+                "result_type": "UNCONSOLIDATED",
+                "result_period": "YEAR",
+                "period_ending": "2020-06-30",
+                "profit_before_tax_mln": "2115.831",
+                "profit_after_tax_mln": "1796.403",
+                "eps": "2.06"
+            },
+            {
+                "result_type": "CONSOLIDATED",
+                "result_period": "YEAR",
+                "period_ending": "2020-06-30",
+                "profit_before_tax_mln": "1450.434",
+                "profit_after_tax_mln": "1125.927",
+                "eps": "1.29"
+            }
+        ],
+        "corporate_actions": {
+            "dividend": "10%(F)",
+            "bonus": null,
+            "book_closure_start": "2020-10-08",
+            "book_closure_end": "2020-10-15",
+            "agm_date": "2020-10-15"
+        }
+    },
+    {
+        "symbol": "ILP",
+        "company_name": "Interloop Limited",
+        "announcement_date": "2020-10-29",
+        "raw_text": "FINANCIAL RESULT FOR THE FIRST QUARTER ENDED 30/09/2020\n(UNCONSOLIDATED) PROFIT/LOSS BEFORE TAXATION RS. IN MILLION 1,448.830\n(UNCONSOLIDATED) PROFIT/LOSS AFTER TAXATION RS. IN MILLION 1,382.350\n(UNCONSOLIDATED) EPS = 1.5849\n(CONSOLIDATED) PROFIT/LOSS BEFORE TAXATION RS. IN MILLION 1,405.083\n(CONSOLIDATED) PROFIT/LOSS AFTER TAXATION RS. IN MILLION 1,335.381\n(CONSOLIDATED) EPS = 1.5311",
+        "financial_results": [
+            {
+                "result_type": "UNCONSOLIDATED",
+                "result_period": "FIRST QUARTER",
+                "period_ending": "2020-09-30",
+                "profit_before_tax_mln": "1448.830",
+                "profit_after_tax_mln": "1382.350",
+                "eps": "1.5849"
+            },
+            {
+                "result_type": "CONSOLIDATED",
+                "result_period": "FIRST QUARTER",
+                "period_ending": "2020-09-30",
+                "profit_before_tax_mln": "1405.083",
+                "profit_after_tax_mln": "1335.381",
+                "eps": "1.5311"
+            }
+        ],
+        "corporate_actions": null
+    }
+]

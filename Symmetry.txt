@@ -1,0 +1,270 @@
+[
+    {
+        "symbol": "SYM",
+        "company_name": "Symmetry Group Limited",
+        "announcement_date": "2023-11-02",
+        "raw_text": "FINANCIAL RESULT FOR THE FIRST QUARTER ENDED 30/09/2023\n(UNCONSOLIDATED) PROFIT/LOSS BEFORE TAXATION RS. IN MILLION 139.963\n(UNCONSOLIDATED) PROFIT/LOSS AFTER TAXATION RS. IN MILLION 127.601\n(UNCONSOLIDATED) EPS = 0.65\n(CONSOLIDATED) PROFIT/LOSS BEFORE TAXATION RS. IN MILLION 184.537\n(CONSOLIDATED) PROFIT/LOSS AFTER TAXATION RS. IN MILLION 158.816\n(CONSOLIDATED) EPS = 0.81\nDIVIDEND = 5%(F)\nBOOK CLOSURE FROM 17/11/2023\nBOOK CLOSURE TO 23/11/2023",
+        "financial_results": [
+            {
+                "result_type": "UNCONSOLIDATED",
+                "result_period": "FIRST QUARTER",
+                "period_ending": "2023-09-30",
+                "profit_before_tax_mln": "139.963",
+                "profit_after_tax_mln": "127.601",
+                "eps": "0.65"
+            },
+            {
+                "result_type": "CONSOLIDATED",
+                "result_period": "FIRST QUARTER",
+                "period_ending": "2023-09-30",
+                "profit_before_tax_mln": "184.537",
+                "profit_after_tax_mln": "158.816",
+                "eps": "0.81"
+            }
+        ],
+        "corporate_actions": {
+            "dividend": "5%(F)",
+            "bonus": null,
+            "book_closure_start": "2023-11-17",
+            "book_closure_end": "2023-11-23",
+            "agm_date": null
+        }
+    },
+    {
+        "symbol": "SYM",
+        "company_name": "Symmetry Group Limited",
+        "announcement_date": "2023-11-24",
+        "raw_text": "FINANCIAL RESULT FOR THE FIRST QUARTER ENDED 30/09/2023\n(UNCONSOLIDATED) PROFIT/LOSS BEFORE TAXATION RS. IN MILLION 21.607\n(UNCONSOLIDATED) PROFIT/LOSS AFTER TAXATION RS. IN MILLION 15.341\n(UNCONSOLIDATED) EPS = 0.05\n(CONSOLIDATED) PROFIT/LOSS BEFORE TAXATION RS. IN MILLION 45.416\n(CONSOLIDATED) PROFIT/LOSS AFTER TAXATION RS. IN MILLION 37.579\n(CONSOLIDATED) EPS = 0.13",
+        "financial_results": [
+            {
+                "result_type": "UNCONSOLIDATED",
+                "result_period": "FIRST QUARTER",
+                "period_ending": "2023-09-30",
+                "profit_before_tax_mln": "21.607",
+                "profit_after_tax_mln": "15.341",
+                "eps": "0.05"
+            },
+            {
+                "result_type": "CONSOLIDATED",
+                "result_period": "FIRST QUARTER",
+                "period_ending": "2023-09-30",
+                "profit_before_tax_mln": "45.416",
+                "profit_after_tax_mln": "37.579",
+                "eps": "0.13"
+            }
+        ],
+        "corporate_actions": null
+    },
+    {
+        "symbol": "SYM",
+        "company_name": "Symmetry Group Limited",
+        "announcement_date": "2024-02-28",
+        "raw_text": "FINANCIAL RESULT FOR THE HALF YEAR ENDED 31/12/2023\n(UNCONSOLIDATED) PROFIT/LOSS BEFORE TAXATION RS. IN MILLION 99.279\n(UNCONSOLIDATED) PROFIT/LOSS AFTER TAXATION RS. IN MILLION 92.444\n(UNCONSOLIDATED) EPS = 0.36\n(CONSOLIDATED) PROFIT/LOSS BEFORE TAXATION RS. IN MILLION 85.664\n(CONSOLIDATED) PROFIT/LOSS AFTER TAXATION RS. IN MILLION 76.077\n(CONSOLIDATED) EPS = 0.32",
+        "financial_results": [
+            {
+                "result_type": "UNCONSOLIDATED",
+                "result_period": "HALF YEAR",
+                "period_ending": "2023-12-31",
+                "profit_before_tax_mln": "99.279",
+                "profit_after_tax_mln": "92.444",
+                "eps": "0.36"
+            },
+            {
+                "result_type": "CONSOLIDATED",
+                "result_period": "HALF YEAR",
+                "period_ending": "2023-12-31",
+                "profit_before_tax_mln": "85.664",
+                "profit_after_tax_mln": "76.077",
+                "eps": "0.32"
+            }
+        ],
+        "corporate_actions": null
+    },
+    {
+        "symbol": "SYM",
+        "company_name": "Symmetry Group Limited",
+        "announcement_date": "2024-08-29",
+        "raw_text": "FINANCIAL RESULT FOR THE YEAR ENDED 30/06/2024\n(UNCONSOLIDATED) PROFIT/LOSS BEFORE TAXATION RS. IN MILLION 141.707\n(UNCONSOLIDATED) PROFIT/LOSS AFTER TAXATION RS. IN MILLION 130.554\n(UNCONSOLIDATED) EPS = 0.56\n(CONSOLIDATED) PROFIT/LOSS BEFORE TAXATION RS. IN MILLION 157.541\n(CONSOLIDATED) PROFIT/LOSS AFTER TAXATION RS. IN MILLION 139.841\n(CONSOLIDATED) EPS = 0.52\nDIVIDEND = 10%(F)\nANNUAL GENERAL MEETING WILL BE HELD ON 10/10/2024\nBOOK CLOSURE FROM 07/10/2024\nBOOK CLOSURE TO 10/10/2024",
+        "financial_results": [
+            {
+                "result_type": "UNCONSOLIDATED",
+                "result_period": "YEAR",
+                "period_ending": "2024-06-30",
+                "profit_before_tax_mln": "141.707",
+                "profit_after_tax_mln": "130.554",
+                "eps": "0.56"
+            },
+            {
+                "result_type": "CONSOLIDATED",
+                "result_period": "YEAR",
+                "period_ending": "2024-06-30",
+                "profit_before_tax_mln": "157.541",
+                "profit_after_tax_mln": "139.841",
+                "eps": "0.52"
+            }
+        ],
+        "corporate_actions": {
+            "dividend": "10%(F)",
+            "bonus": null,
+            "book_closure_start": "2024-10-07",
+            "book_closure_end": "2024-10-10",
+            "agm_date": "2024-10-10"
+        }
+    },
+    {
+        "symbol": "SYM",
+        "company_name": "Symmetry Group Limited",
+        "announcement_date": "2025-02-27",
+        "raw_text": "FINANCIAL RESULT FOR THE HALF YEAR ENDED 31/12/2024\n(UNCONSOLIDATED) PROFIT/LOSS BEFORE TAXATION RS. IN MILLION 111.118\n(UNCONSOLIDATED) PROFIT/LOSS AFTER TAXATION RS. IN MILLION 101.089\n(UNCONSOLIDATED) EPS = 0.35\n(CONSOLIDATED) PROFIT/LOSS BEFORE TAXATION RS. IN MILLION 116.615\n(CONSOLIDATED) PROFIT/LOSS AFTER TAXATION RS. IN MILLION 103.245\n(CONSOLIDATED) EPS = 0.36",
+        "financial_results": [
+            {
+                "result_type": "UNCONSOLIDATED",
+                "result_period": "HALF YEAR",
+                "period_ending": "2024-12-31",
+                "profit_before_tax_mln": "111.118",
+                "profit_after_tax_mln": "101.089",
+                "eps": "0.35"
+            },
+            {
+                "result_type": "CONSOLIDATED",
+                "result_period": "HALF YEAR",
+                "period_ending": "2024-12-31",
+                "profit_before_tax_mln": "116.615",
+                "profit_after_tax_mln": "103.245",
+                "eps": "0.36"
+            }
+        ],
+        "corporate_actions": null
+    },
+    {
+        "symbol": "SYM",
+        "company_name": "Symmetry Group Limited",
+        "announcement_date": "2025-04-30",
+        "raw_text": "FINANCIAL RESULT FOR THE NINE MONTHS ENDED 31/03/2025\n(UNCONSOLIDATED) PROFIT/LOSS BEFORE TAXATION RS. IN MILLION 130.388\n(UNCONSOLIDATED) PROFIT/LOSS AFTER TAXATION RS. IN MILLION 118.176\n(UNCONSOLIDATED) EPS = 0.41\n(CONSOLIDATED) PROFIT/LOSS BEFORE TAXATION RS. IN MILLION 161.667\n(CONSOLIDATED) PROFIT/LOSS AFTER TAXATION RS. IN MILLION 145.196\n(CONSOLIDATED) EPS = 0.51",
+        "financial_results": [
+            {
+                "result_type": "UNCONSOLIDATED",
+                "result_period": "NINE MONTHS",
+                "period_ending": "2025-03-31",
+                "profit_before_tax_mln": "130.388",
+                "profit_after_tax_mln": "118.176",
+                "eps": "0.41"
+            },
+            {
+                "result_type": "CONSOLIDATED",
+                "result_period": "NINE MONTHS",
+                "period_ending": "2025-03-31",
+                "profit_before_tax_mln": "161.667",
+                "profit_after_tax_mln": "145.196",
+                "eps": "0.51"
+            }
+        ],
+        "corporate_actions": null
+    },
+    {
+        "symbol": "SYM",
+        "company_name": "Symmetry Group Limited",
+        "announcement_date": "2025-09-15",
+        "raw_text": "FINANCIAL RESULT FOR THE YEAR ENDED 30/06/2025\n(UNCONSOLIDATED) PROFIT/LOSS BEFORE TAXATION RS. IN MILLION 171.364\n(UNCONSOLIDATED) PROFIT/LOSS AFTER TAXATION RS. IN MILLION 157.959\n(UNCONSOLIDATED) EPS = 0.55\n(CONSOLIDATED) PROFIT/LOSS BEFORE TAXATION RS. IN MILLION 183.404\n(CONSOLIDATED) PROFIT/LOSS AFTER TAXATION RS. IN MILLION 168.140\n(CONSOLIDATED) EPS = 0.59\nDIVIDEND = 5%(F)\nANNUAL GENERAL MEETING WILL BE HELD ON 28/10/2025\nBOOK CLOSURE FROM 22/10/2025\nBOOK CLOSURE TO 28/10/2025",
+        "financial_results": [
+            {
+                "result_type": "UNCONSOLIDATED",
+                "result_period": "YEAR",
+                "period_ending": "2025-06-30",
+                "profit_before_tax_mln": "171.364",
+                "profit_after_tax_mln": "157.959",
+                "eps": "0.55"
+            },
+            {
+                "result_type": "CONSOLIDATED",
+                "result_period": "YEAR",
+                "period_ending": "2025-06-30",
+                "profit_before_tax_mln": "183.404",
+                "profit_after_tax_mln": "168.140",
+                "eps": "0.59"
+            }
+        ],
+        "corporate_actions": {
+            "dividend": "5%(F)",
+            "bonus": null,
+            "book_closure_start": "2025-10-22",
+            "book_closure_end": "2025-10-28",
+            "agm_date": "2025-10-28"
+        }
+    },
+    {
+        "symbol": "SYM",
+        "company_name": "Symmetry Group Limited",
+        "announcement_date": "2025-10-30",
+        "raw_text": "FINANCIAL RESULT FOR THE FIRST QUARTER ENDED 30/09/2025\n(UNCONSOLIDATED) PROFIT/LOSS BEFORE TAXATION RS. IN MILLION 25.210\n(UNCONSOLIDATED) PROFIT/LOSS AFTER TAXATION RS. IN MILLION 22.707\n(UNCONSOLIDATED) EPS = 0.08\n(CONSOLIDATED) PROFIT/LOSS BEFORE TAXATION RS. IN MILLION 51.714\n(CONSOLIDATED) PROFIT/LOSS AFTER TAXATION RS. IN MILLION 46.956\n(CONSOLIDATED) EPS = 0.16",
+        "financial_results": [
+            {
+                "result_type": "UNCONSOLIDATED",
+                "result_period": "FIRST QUARTER",
+                "period_ending": "2025-09-30",
+                "profit_before_tax_mln": "25.210",
+                "profit_after_tax_mln": "22.707",
+                "eps": "0.08"
+            },
+            {
+                "result_type": "CONSOLIDATED",
+                "result_period": "FIRST QUARTER",
+                "period_ending": "2025-09-30",
+                "profit_before_tax_mln": "51.714",
+                "profit_after_tax_mln": "46.956",
+                "eps": "0.16"
+            }
+        ],
+        "corporate_actions": null
+    },
+    {
+        "symbol": "SYM",
+        "company_name": "Symmetry Group Limited",
+        "announcement_date": "2026-03-02",
+        "raw_text": "FINANCIAL RESULT FOR THE HALF YEAR ENDED 31/12/2025\n(UNCONSOLIDATED) PROFIT/LOSS BEFORE TAXATION RS. IN MILLION 154.745\n(UNCONSOLIDATED) PROFIT/LOSS AFTER TAXATION RS. IN MILLION 148.357\n(UNCONSOLIDATED) EPS = 0.52\n(CONSOLIDATED) PROFIT/LOSS BEFORE TAXATION RS. IN MILLION 160.964\n(CONSOLIDATED) PROFIT/LOSS AFTER TAXATION RS. IN MILLION 149.299\n(CONSOLIDATED) EPS = 0.52",
+        "financial_results": [
+            {
+                "result_type": "UNCONSOLIDATED",
+                "result_period": "HALF YEAR",
+                "period_ending": "2025-12-31",
+                "profit_before_tax_mln": "154.745",
+                "profit_after_tax_mln": "148.357",
+                "eps": "0.52"
+            },
+            {
+                "result_type": "CONSOLIDATED",
+                "result_period": "HALF YEAR",
+                "period_ending": "2025-12-31",
+                "profit_before_tax_mln": "160.964",
+                "profit_after_tax_mln": "149.299",
+                "eps": "0.52"
+            }
+        ],
+        "corporate_actions": null
+    },
+    {
+        "symbol": "SYM",
+        "company_name": "Symmetry Group Limited",
+        "announcement_date": "2026-04-28",
+        "raw_text": "FINANCIAL RESULT FOR THE NINE MONTHS ENDED 31/03/2026\n(UNCONSOLIDATED) PROFIT/LOSS BEFORE TAXATION RS. IN MILLION 164.605\n(UNCONSOLIDATED) PROFIT/LOSS AFTER TAXATION RS. IN MILLION 158.082\n(UNCONSOLIDATED) EPS = 0.55\n(CONSOLIDATED) PROFIT/LOSS BEFORE TAXATION RS. IN MILLION 176.548\n(CONSOLIDATED) PROFIT/LOSS AFTER TAXATION RS. IN MILLION 160.566\n(CONSOLIDATED) EPS = 0.56",
+        "financial_results": [
+            {
+                "result_type": "UNCONSOLIDATED",
+                "result_period": "NINE MONTHS",
+                "period_ending": "2026-03-31",
+                "profit_before_tax_mln": "164.605",
+                "profit_after_tax_mln": "158.082",
+                "eps": "0.55"
+            },
+            {
+                "result_type": "CONSOLIDATED",
+                "result_period": "NINE MONTHS",
+                "period_ending": "2026-03-31",
+                "profit_before_tax_mln": "176.548",
+                "profit_after_tax_mln": "160.566",
+                "eps": "0.56"
+            }
+        ],
+        "corporate_actions": null
+    }
+]

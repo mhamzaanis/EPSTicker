@@ -1,0 +1,1086 @@
+[
+    {
+        "symbol": "OGDC",
+        "company_name": "Oil and Gas Development Company Limited",
+        "announcement_date": "2015-02-04",
+        "raw_text": "FINANCIAL RESULT FOR THE HALF YEAR ENDED 31/12/2014\nPROFIT/LOSS BEFORE TAXATION RS. IN MILLION 74,709.743\nPROFIT/LOSS AFTER TAXATION RS. IN MILLION 47,828.372\nEPS = 11.12\nDIVIDEND = 20%(II)\nBOOK CLOSURE FROM 17/03/2015\nBOOK CLOSURE TO 24/03/2015",
+        "financial_results": [
+            {
+                "result_type": "UNCONSOLIDATED",
+                "result_period": "HALF YEAR",
+                "period_ending": "2014-12-31",
+                "profit_before_tax_mln": "74709.743",
+                "profit_after_tax_mln": "47828.372",
+                "eps": "11.12"
+            }
+        ],
+        "corporate_actions": {
+            "dividend": "20%(II)",
+            "bonus": null,
+            "book_closure_start": "2015-03-17",
+            "book_closure_end": "2015-03-24",
+            "agm_date": null
+        }
+    },
+    {
+        "symbol": "OGDC",
+        "company_name": "Oil and Gas Development Company Limited",
+        "announcement_date": "2015-04-23",
+        "raw_text": "FINANCIAL RESULT FOR THE NINE MONTHS ENDED 31/03/2015\nPROFIT/LOSS BEFORE TAXATION RS. IN MILLION 103,105.073\nPROFIT/LOSS AFTER TAXATION RS. IN MILLION 68,006.436\nEPS = 15.81\nDIVIDEND = 17.5%((III)\nBOOK CLOSURE FROM 16/06/2015\nBOOK CLOSURE TO 23/06/2015",
+        "financial_results": [
+            {
+                "result_type": "UNCONSOLIDATED",
+                "result_period": "NINE MONTHS",
+                "period_ending": "2015-03-31",
+                "profit_before_tax_mln": "103105.073",
+                "profit_after_tax_mln": "68006.436",
+                "eps": "15.81"
+            }
+        ],
+        "corporate_actions": {
+            "dividend": "17.5%((III)",
+            "bonus": null,
+            "book_closure_start": "2015-06-16",
+            "book_closure_end": "2015-06-23",
+            "agm_date": null
+        }
+    },
+    {
+        "symbol": "OGDC",
+        "company_name": "Oil and Gas Development Company Limited",
+        "announcement_date": "2015-08-26",
+        "raw_text": "FINANCIAL RESULT FOR THE YEAR ENDED 30/06/2015\nPROFIT/LOSS BEFORE TAXATION RS. IN MILLION 127,025.453\nPROFIT/LOSS AFTER TAXATION RS. IN MILLION 87,249.032\nEPS = 20.29\nDIVIDEND = 15%\nANNUAL GENERAL MEETING WILL BE HELD ON 15/10/2015\nBOOK CLOSURE FROM 08/10/2015\nBOOK CLOSURE TO 15/10/2015",
+        "financial_results": [
+            {
+                "result_type": "UNCONSOLIDATED",
+                "result_period": "YEAR",
+                "period_ending": "2015-06-30",
+                "profit_before_tax_mln": "127025.453",
+                "profit_after_tax_mln": "87249.032",
+                "eps": "20.29"
+            }
+        ],
+        "corporate_actions": {
+            "dividend": "15%",
+            "bonus": null,
+            "book_closure_start": "2015-10-08",
+            "book_closure_end": "2015-10-15",
+            "agm_date": "2015-10-15"
+        }
+    },
+    {
+        "symbol": "OGDC",
+        "company_name": "Oil and Gas Development Company Limited",
+        "announcement_date": "2015-10-16",
+        "raw_text": "FINANCIAL RESULT FOR THE FIRST QUARTER ENDED 30/09/2015\nPROFIT/LOSS BEFORE TAXATION RS. IN MILLION 26,228.269\nPROFIT/LOSS AFTER TAXATION RS. IN MILLION 18,259.812\nEPS = 4.25\nDIVIDEND = 15%(I)\nBOOK CLOSURE FROM 11/11/2015\nBOOK CLOSURE TO 17/11/2015",
+        "financial_results": [
+            {
+                "result_type": "UNCONSOLIDATED",
+                "result_period": "FIRST QUARTER",
+                "period_ending": "2015-09-30",
+                "profit_before_tax_mln": "26228.269",
+                "profit_after_tax_mln": "18259.812",
+                "eps": "4.25"
+            }
+        ],
+        "corporate_actions": {
+            "dividend": "15%(I)",
+            "bonus": null,
+            "book_closure_start": "2015-11-11",
+            "book_closure_end": "2015-11-17",
+            "agm_date": null
+        }
+    },
+    {
+        "symbol": "OGDC",
+        "company_name": "Oil and Gas Development Company Limited",
+        "announcement_date": "2016-02-16",
+        "raw_text": "FINANCIAL RESULT FOR THE HALF YEAR ENDED 31/12/2015\nPROFIT/LOSS BEFORE TAXATION RS. IN MILLION 48,076.051\nPROFIT/LOSS AFTER TAXATION RS. IN MILLION 34,205.587\nEPS = 7.95\nDIVIDEND = 12%(II)\nBOOK CLOSURE FROM 15/03/2016\nBOOK CLOSURE TO 21/03/2016",
+        "financial_results": [
+            {
+                "result_type": "UNCONSOLIDATED",
+                "result_period": "HALF YEAR",
+                "period_ending": "2015-12-31",
+                "profit_before_tax_mln": "48076.051",
+                "profit_after_tax_mln": "34205.587",
+                "eps": "7.95"
+            }
+        ],
+        "corporate_actions": {
+            "dividend": "12%(II)",
+            "bonus": null,
+            "book_closure_start": "2016-03-15",
+            "book_closure_end": "2016-03-21",
+            "agm_date": null
+        }
+    },
+    {
+        "symbol": "OGDC",
+        "company_name": "Oil and Gas Development Company Limited",
+        "announcement_date": "2016-04-26",
+        "raw_text": "FINANCIAL RESULT FOR THE NINE MONTHS ENDED 31/03/2016\nPROFIT/LOSS BEFORE TAXATION RS. IN MILLION 61,924.201\nPROFIT/LOSS AFTER TAXATION RS. IN MILLION 43,499.796\nEPS = 10.11\nDIVIDEND = 5% (iii)\nBOOK CLOSURE FROM 16/06/2016\nBOOK CLOSURE TO 23/06/2016",
+        "financial_results": [
+            {
+                "result_type": "UNCONSOLIDATED",
+                "result_period": "NINE MONTHS",
+                "period_ending": "2016-03-31",
+                "profit_before_tax_mln": "61924.201",
+                "profit_after_tax_mln": "43499.796",
+                "eps": "10.11"
+            }
+        ],
+        "corporate_actions": {
+            "dividend": "5% (iii)",
+            "bonus": null,
+            "book_closure_start": "2016-06-16",
+            "book_closure_end": "2016-06-23",
+            "agm_date": null
+        }
+    },
+    {
+        "symbol": "OGDC",
+        "company_name": "Oil and Gas Development Company Limited",
+        "announcement_date": "2016-08-24",
+        "raw_text": "FINANCIAL RESULT FOR THE YEAR ENDED 30/06/2016\nPROFIT/LOSS BEFORE TAXATION RS. IN MILLION 80,507.387\nPROFIT/LOSS AFTER TAXATION RS. IN MILLION 59,970.802\nEPS = 13.94\nDIVIDEND = 20% (F)\nANNUAL GENERAL MEETING WILL BE HELD ON 26/10/2016\nBOOK CLOSURE FROM 19/10/2016\nBOOK CLOSURE TO 26/10/2016",
+        "financial_results": [
+            {
+                "result_type": "UNCONSOLIDATED",
+                "result_period": "YEAR",
+                "period_ending": "2016-06-30",
+                "profit_before_tax_mln": "80507.387",
+                "profit_after_tax_mln": "59970.802",
+                "eps": "13.94"
+            }
+        ],
+        "corporate_actions": {
+            "dividend": "20% (F)",
+            "bonus": null,
+            "book_closure_start": "2016-10-19",
+            "book_closure_end": "2016-10-26",
+            "agm_date": "2016-10-26"
+        }
+    },
+    {
+        "symbol": "OGDC",
+        "company_name": "Oil and Gas Development Company Limited",
+        "announcement_date": "2016-10-27",
+        "raw_text": "FINANCIAL RESULT FOR THE FIRST QUARTER ENDED 30/09/2016\nPROFIT/LOSS BEFORE TAXATION RS. IN MILLION 20,834.518\nPROFIT/LOSS AFTER TAXATION RS. IN MILLION 14,631.554\nEPS = 3.40\nDIVIDEND = 15%(I)\nBOOK CLOSURE FROM 13/12/2016\nBOOK CLOSURE TO 20/12/2016",
+        "financial_results": [
+            {
+                "result_type": "UNCONSOLIDATED",
+                "result_period": "FIRST QUARTER",
+                "period_ending": "2016-09-30",
+                "profit_before_tax_mln": "20834.518",
+                "profit_after_tax_mln": "14631.554",
+                "eps": "3.40"
+            }
+        ],
+        "corporate_actions": {
+            "dividend": "15%(I)",
+            "bonus": null,
+            "book_closure_start": "2016-12-13",
+            "book_closure_end": "2016-12-20",
+            "agm_date": null
+        }
+    },
+    {
+        "symbol": "OGDC",
+        "company_name": "Oil and Gas Development Company Limited",
+        "announcement_date": "2017-02-17",
+        "raw_text": "FINANCIAL RESULT FOR THE HALF YEAR ENDED 31/12/2016\nPROFIT/LOSS BEFORE TAXATION RS. IN MILLION 40,502.683\nPROFIT/LOSS AFTER TAXATION RS. IN MILLION 30,008.404\nEPS = 6.98\nDIVIDEND = 10%\nBOOK CLOSURE FROM 15/03/2017\nBOOK CLOSURE TO 21/03/2017",
+        "financial_results": [
+            {
+                "result_type": "UNCONSOLIDATED",
+                "result_period": "HALF YEAR",
+                "period_ending": "2016-12-31",
+                "profit_before_tax_mln": "40502.683",
+                "profit_after_tax_mln": "30008.404",
+                "eps": "6.98"
+            }
+        ],
+        "corporate_actions": {
+            "dividend": "10%",
+            "bonus": null,
+            "book_closure_start": "2017-03-15",
+            "book_closure_end": "2017-03-21",
+            "agm_date": null
+        }
+    },
+    {
+        "symbol": "OGDC",
+        "company_name": "Oil and Gas Development Company Limited",
+        "announcement_date": "2017-04-21",
+        "raw_text": "FINANCIAL RESULT FOR THE NINE MONTHS ENDED 31/03/2017\nPROFIT/LOSS BEFORE TAXATION RS. IN MILLION 64,519.698\nPROFIT/LOSS AFTER TAXATION RS. IN MILLION 47,594.808\nEPS = 11.07\nDIVIDEND = 15%\nBOOK CLOSURE FROM 16/06/2017\nBOOK CLOSURE TO 23/06/2017",
+        "financial_results": [
+            {
+                "result_type": "UNCONSOLIDATED",
+                "result_period": "NINE MONTHS",
+                "period_ending": "2017-03-31",
+                "profit_before_tax_mln": "64519.698",
+                "profit_after_tax_mln": "47594.808",
+                "eps": "11.07"
+            }
+        ],
+        "corporate_actions": {
+            "dividend": "15%",
+            "bonus": null,
+            "book_closure_start": "2017-06-16",
+            "book_closure_end": "2017-06-23",
+            "agm_date": null
+        }
+    },
+    {
+        "symbol": "OGDC",
+        "company_name": "Oil and Gas Development Company Limited",
+        "announcement_date": "2017-09-15",
+        "raw_text": "FINANCIAL RESULT FOR THE YEAR ENDED 30/06/2017\nPROFIT/LOSS BEFORE TAXATION RS. IN MILLION 89,137.462\nPROFIT/LOSS AFTER TAXATION RS. IN MILLION 63,803.402\nEPS = 14.83\nDIVIDEND = 20%\nANNUAL GENERAL MEETING WILL BE HELD ON 24/10/2017\nBOOK CLOSURE FROM 18/10/2017\nBOOK CLOSURE TO 24/10/2017",
+        "financial_results": [
+            {
+                "result_type": "UNCONSOLIDATED",
+                "result_period": "YEAR",
+                "period_ending": "2017-06-30",
+                "profit_before_tax_mln": "89137.462",
+                "profit_after_tax_mln": "63803.402",
+                "eps": "14.83"
+            }
+        ],
+        "corporate_actions": {
+            "dividend": "20%",
+            "bonus": null,
+            "book_closure_start": "2017-10-18",
+            "book_closure_end": "2017-10-24",
+            "agm_date": "2017-10-24"
+        }
+    },
+    {
+        "symbol": "OGDC",
+        "company_name": "Oil and Gas Development Company Limited",
+        "announcement_date": "2017-10-26",
+        "raw_text": "FINANCIAL RESULT FOR THE FIRST QUARTER ENDED 30/09/2017\nPROFIT/LOSS BEFORE TAXATION RS. IN MILLION 24,389.208\nPROFIT/LOSS AFTER TAXATION RS. IN MILLION 17,009.527\nEPS = 3.95\nDIVIDEND = 17.50%\nBOOK CLOSURE FROM 13/12/2017\nBOOK CLOSURE TO 19/12/2017",
+        "financial_results": [
+            {
+                "result_type": "UNCONSOLIDATED",
+                "result_period": "FIRST QUARTER",
+                "period_ending": "2017-09-30",
+                "profit_before_tax_mln": "24389.208",
+                "profit_after_tax_mln": "17009.527",
+                "eps": "3.95"
+            }
+        ],
+        "corporate_actions": {
+            "dividend": "17.50%",
+            "bonus": null,
+            "book_closure_start": "2017-12-13",
+            "book_closure_end": "2017-12-19",
+            "agm_date": null
+        }
+    },
+    {
+        "symbol": "OGDC",
+        "company_name": "Oil and Gas Development Company Limited",
+        "announcement_date": "2018-02-19",
+        "raw_text": "FINANCIAL RESULT FOR THE HALF YEAR ENDED 31/12/2017\nPROFIT/LOSS BEFORE TAXATION RS. IN MILLION 52,028.859\nPROFIT/LOSS AFTER TAXATION RS. IN MILLION 36,671.577\nEPS = 8.53\nDIVIDEND = 30%\nBOOK CLOSURE FROM 14/03/2018\nBOOK CLOSURE TO 20/03/2018",
+        "financial_results": [
+            {
+                "result_type": "UNCONSOLIDATED",
+                "result_period": "HALF YEAR",
+                "period_ending": "2017-12-31",
+                "profit_before_tax_mln": "52028.859",
+                "profit_after_tax_mln": "36671.577",
+                "eps": "8.53"
+            }
+        ],
+        "corporate_actions": {
+            "dividend": "30%",
+            "bonus": null,
+            "book_closure_start": "2018-03-14",
+            "book_closure_end": "2018-03-20",
+            "agm_date": null
+        }
+    },
+    {
+        "symbol": "OGDC",
+        "company_name": "Oil and Gas Development Company Limited",
+        "announcement_date": "2018-04-27",
+        "raw_text": "FINANCIAL RESULT FOR THE NINE MONTHS ENDED 31/03/2018\nPROFIT/LOSS BEFORE TAXATION RS. IN MILLION 80,164.720\nPROFIT/LOSS AFTER TAXATION RS. IN MILLION 56,821.252\nEPS = 13.21\nDIVIDEND = 27.50%\nBOOK CLOSURE FROM 05/06/2018\nBOOK CLOSURE TO 12/06/2018",
+        "financial_results": [
+            {
+                "result_type": "UNCONSOLIDATED",
+                "result_period": "NINE MONTHS",
+                "period_ending": "2018-03-31",
+                "profit_before_tax_mln": "80164.720",
+                "profit_after_tax_mln": "56821.252",
+                "eps": "13.21"
+            }
+        ],
+        "corporate_actions": {
+            "dividend": "27.50%",
+            "bonus": null,
+            "book_closure_start": "2018-06-05",
+            "book_closure_end": "2018-06-12",
+            "agm_date": null
+        }
+    },
+    {
+        "symbol": "OGDC",
+        "company_name": "Oil and Gas Development Company Limited",
+        "announcement_date": "2018-09-07",
+        "raw_text": "FINANCIAL RESULT FOR THE YEAR ENDED 30/06/2018\nPROFIT/LOSS BEFORE TAXATION RS. IN MILLION 112,626.761\nPROFIT/LOSS AFTER TAXATION RS. IN MILLION 78,736.295\nEPS = 18.31\nDIVIDEND = 25%\nANNUAL GENERAL MEETING WILL BE HELD ON 25/10/2018\nBOOK CLOSURE FROM 18/10/2018\nBOOK CLOSURE TO 25/10/2018",
+        "financial_results": [
+            {
+                "result_type": "UNCONSOLIDATED",
+                "result_period": "YEAR",
+                "period_ending": "2018-06-30",
+                "profit_before_tax_mln": "112626.761",
+                "profit_after_tax_mln": "78736.295",
+                "eps": "18.31"
+            }
+        ],
+        "corporate_actions": {
+            "dividend": "25%",
+            "bonus": null,
+            "book_closure_start": "2018-10-18",
+            "book_closure_end": "2018-10-25",
+            "agm_date": "2018-10-25"
+        }
+    },
+    {
+        "symbol": "OGDC",
+        "company_name": "Oil and Gas Development Company Limited",
+        "announcement_date": "2018-10-25",
+        "raw_text": "FINANCIAL RESULT FOR THE FIRST QUARTER ENDED 30/09/2018\nPROFIT/LOSS BEFORE TAXATION RS. IN MILLION 39,363.464\nPROFIT/LOSS AFTER TAXATION RS. IN MILLION 26,734.997\nEPS = 6.22\nDIVIDEND = 27.50%\nBOOK CLOSURE FROM 13/12/2018\nBOOK CLOSURE TO 20/12/2018",
+        "financial_results": [
+            {
+                "result_type": "UNCONSOLIDATED",
+                "result_period": "FIRST QUARTER",
+                "period_ending": "2018-09-30",
+                "profit_before_tax_mln": "39363.464",
+                "profit_after_tax_mln": "26734.997",
+                "eps": "6.22"
+            }
+        ],
+        "corporate_actions": {
+            "dividend": "27.50%",
+            "bonus": null,
+            "book_closure_start": "2018-12-13",
+            "book_closure_end": "2018-12-20",
+            "agm_date": null
+        }
+    },
+    {
+        "symbol": "OGDC",
+        "company_name": "Oil and Gas Development Company Limited",
+        "announcement_date": "2019-02-22",
+        "raw_text": "FINANCIAL RESULT FOR THE HALF YEAR ENDED 31/12/2018\nPROFIT/LOSS BEFORE TAXATION RS. IN MILLION 84,739.276\nPROFIT/LOSS AFTER TAXATION RS. IN MILLION 56,756.358\nEPS = 13.20\nDIVIDEND = 30%(ii)\nBOOK CLOSURE FROM 12/04/2019\nBOOK CLOSURE TO 18/04/2019",
+        "financial_results": [
+            {
+                "result_type": "UNCONSOLIDATED",
+                "result_period": "HALF YEAR",
+                "period_ending": "2018-12-31",
+                "profit_before_tax_mln": "84739.276",
+                "profit_after_tax_mln": "56756.358",
+                "eps": "13.20"
+            }
+        ],
+        "corporate_actions": {
+            "dividend": "30%(ii)",
+            "bonus": null,
+            "book_closure_start": "2019-04-12",
+            "book_closure_end": "2019-04-18",
+            "agm_date": null
+        }
+    },
+    {
+        "symbol": "OGDC",
+        "company_name": "Oil and Gas Development Company Limited",
+        "announcement_date": "2019-04-26",
+        "raw_text": "FINANCIAL RESULT FOR THE NINE MONTHS ENDED 31/03/2019\nPROFIT/LOSS BEFORE TAXATION RS. IN MILLION 127,993.639\nPROFIT/LOSS AFTER TAXATION RS. IN MILLION 85,312.035\nEPS = 19.84\nDIVIDEND = 27.5%(iii)\nBOOK CLOSURE FROM 11/06/2019\nBOOK CLOSURE TO 17/06/2019",
+        "financial_results": [
+            {
+                "result_type": "UNCONSOLIDATED",
+                "result_period": "NINE MONTHS",
+                "period_ending": "2019-03-31",
+                "profit_before_tax_mln": "127993.639",
+                "profit_after_tax_mln": "85312.035",
+                "eps": "19.84"
+            }
+        ],
+        "corporate_actions": {
+            "dividend": "27.5%(iii)",
+            "bonus": null,
+            "book_closure_start": "2019-06-11",
+            "book_closure_end": "2019-06-17",
+            "agm_date": null
+        }
+    },
+    {
+        "symbol": "OGDC",
+        "company_name": "Oil and Gas Development Company Limited",
+        "announcement_date": "2019-09-18",
+        "raw_text": "FINANCIAL RESULT FOR THE YEAR ENDED 30/06/2019\nPROFIT/LOSS BEFORE TAXATION RS. IN MILLION 176,599.413\nPROFIT/LOSS AFTER TAXATION RS. IN MILLION 118,385.788\nEPS = 27.53\nDIVIDEND = 25%(F)\nANNUAL GENERAL MEETING WILL BE HELD ON 24/10/2019\nBOOK CLOSURE FROM 18/10/2019\nBOOK CLOSURE TO 24/10/2019",
+        "financial_results": [
+            {
+                "result_type": "UNCONSOLIDATED",
+                "result_period": "YEAR",
+                "period_ending": "2019-06-30",
+                "profit_before_tax_mln": "176599.413",
+                "profit_after_tax_mln": "118385.788",
+                "eps": "27.53"
+            }
+        ],
+        "corporate_actions": {
+            "dividend": "25%(F)",
+            "bonus": null,
+            "book_closure_start": "2019-10-18",
+            "book_closure_end": "2019-10-24",
+            "agm_date": "2019-10-24"
+        }
+    },
+    {
+        "symbol": "OGDC",
+        "company_name": "Oil and Gas Development Company Limited",
+        "announcement_date": "2019-10-25",
+        "raw_text": "FINANCIAL RESULT FOR THE FIRST QUARTER ENDED 30/09/2019\nPROFIT/LOSS BEFORE TAXATION RS. IN MILLION 39,688.365\nPROFIT/LOSS AFTER TAXATION RS. IN MILLION 27,316.350\nEPS = 6.35\nDIVIDEND = 25%(i)\nBOOK CLOSURE FROM 13/12/2019\nBOOK CLOSURE TO 19/12/2019",
+        "financial_results": [
+            {
+                "result_type": "UNCONSOLIDATED",
+                "result_period": "FIRST QUARTER",
+                "period_ending": "2019-09-30",
+                "profit_before_tax_mln": "39688.365",
+                "profit_after_tax_mln": "27316.350",
+                "eps": "6.35"
+            }
+        ],
+        "corporate_actions": {
+            "dividend": "25%(i)",
+            "bonus": null,
+            "book_closure_start": "2019-12-13",
+            "book_closure_end": "2019-12-19",
+            "agm_date": null
+        }
+    },
+    {
+        "symbol": "OGDC",
+        "company_name": "Oil and Gas Development Company Limited",
+        "announcement_date": "2020-02-26",
+        "raw_text": "FINANCIAL RESULT FOR THE HALF YEAR ENDED 31/12/2019\nPROFIT/LOSS BEFORE TAXATION RS. IN MILLION 78,836.072\nPROFIT/LOSS AFTER TAXATION RS. IN MILLION 53,184.444\nEPS = 12.37\nDIVIDEND = 17.5%(ii)\nBOOK CLOSURE FROM 14/04/2020\nBOOK CLOSURE TO 20/04/2020",
+        "financial_results": [
+            {
+                "result_type": "UNCONSOLIDATED",
+                "result_period": "HALF YEAR",
+                "period_ending": "2019-12-31",
+                "profit_before_tax_mln": "78836.072",
+                "profit_after_tax_mln": "53184.444",
+                "eps": "12.37"
+            }
+        ],
+        "corporate_actions": {
+            "dividend": "17.5%(ii)",
+            "bonus": null,
+            "book_closure_start": "2020-04-14",
+            "book_closure_end": "2020-04-20",
+            "agm_date": null
+        }
+    },
+    {
+        "symbol": "OGDC",
+        "company_name": "Oil and Gas Development Company Limited",
+        "announcement_date": "2020-04-27",
+        "raw_text": "FINANCIAL RESULT FOR THE NINE MONTHS ENDED 31/03/2020\nPROFIT/LOSS BEFORE TAXATION RS. IN MILLION 123,314.582\nPROFIT/LOSS AFTER TAXATION RS. IN MILLION 83,644.885\nEPS = 19.45",
+        "financial_results": [
+            {
+                "result_type": "UNCONSOLIDATED",
+                "result_period": "NINE MONTHS",
+                "period_ending": "2020-03-31",
+                "profit_before_tax_mln": "123314.582",
+                "profit_after_tax_mln": "83644.885",
+                "eps": "19.45"
+            }
+        ],
+        "corporate_actions": null
+    },
+    {
+        "symbol": "OGDC",
+        "company_name": "Oil and Gas Development Company Limited",
+        "announcement_date": "2020-09-28",
+        "raw_text": "FINANCIAL RESULT FOR THE YEAR ENDED 30/06/2020\nPROFIT/LOSS BEFORE TAXATION RS. IN MILLION 143,064.904\nPROFIT/LOSS AFTER TAXATION RS. IN MILLION 100,081.671\nEPS =23.27\nDIVIDEND = 25%(F)\nANNUAL GENERAL MEETING WILL BE HELD ON 28/10/2020\nBOOK CLOSURE FROM 22/10/2020\nBOOK CLOSURE TO 28/10/2020",
+        "financial_results": [
+            {
+                "result_type": "UNCONSOLIDATED",
+                "result_period": "YEAR",
+                "period_ending": "2020-06-30",
+                "profit_before_tax_mln": "143064.904",
+                "profit_after_tax_mln": "100081.671",
+                "eps": "23.27"
+            }
+        ],
+        "corporate_actions": {
+            "dividend": "25%(F)",
+            "bonus": null,
+            "book_closure_start": "2020-10-22",
+            "book_closure_end": "2020-10-28",
+            "agm_date": "2020-10-28"
+        }
+    },
+    {
+        "symbol": "OGDC",
+        "company_name": "Oil and Gas Development Company Limited",
+        "announcement_date": "2020-10-29",
+        "raw_text": "FINANCIAL RESULT FOR THE FIRST QUARTER ENDED 30/09/2020\nPROFIT/LOSS BEFORE TAXATION RS. IN MILLION 34,020.429\nPROFIT/LOSS AFTER TAXATION RS. IN MILLION 23,427.383\nEPS = 5.45\nDIVIDEND = 20%(i)\nBOOK CLOSURE FROM 15/12/2020\nBOOK CLOSURE TO 21/12/2020",
+        "financial_results": [
+            {
+                "result_type": "UNCONSOLIDATED",
+                "result_period": "FIRST QUARTER",
+                "period_ending": "2020-09-30",
+                "profit_before_tax_mln": "34020.429",
+                "profit_after_tax_mln": "23427.383",
+                "eps": "5.45"
+            }
+        ],
+        "corporate_actions": {
+            "dividend": "20%(i)",
+            "bonus": null,
+            "book_closure_start": "2020-12-15",
+            "book_closure_end": "2020-12-21",
+            "agm_date": null
+        }
+    },
+    {
+        "symbol": "OGDC",
+        "company_name": "Oil and Gas Development Company Limited",
+        "announcement_date": "2021-02-24",
+        "raw_text": "FINANCIAL RESULT FOR THE HALF YEAR ENDED 31/12/2020\nDIVIDEND = 16%(ii)\nPROFIT/LOSS BEFORE TAXATION RS. IN MILLION 62.069.078\nPROFIT/LOSS AFTER TAXATION RS. IN MILLION 42,225.369\nEPS = 9.82\nBOOK CLOSURE FROM 13/04/2021\nBOOK CLOSURE TO 19/04/2021",
+        "financial_results": [
+            {
+                "result_type": "UNCONSOLIDATED",
+                "result_period": "HALF YEAR",
+                "period_ending": "2020-12-31",
+                "profit_before_tax_mln": "62069.078",
+                "profit_after_tax_mln": "42225.369",
+                "eps": "9.82"
+            }
+        ],
+        "corporate_actions": {
+            "dividend": "16%(ii)",
+            "bonus": null,
+            "book_closure_start": "2021-04-13",
+            "book_closure_end": "2021-04-19",
+            "agm_date": null
+        }
+    },
+    {
+        "symbol": "OGDC",
+        "company_name": "Oil and Gas Development Company Limited",
+        "announcement_date": "2021-04-27",
+        "raw_text": "DIVIDEND = 18%(iii)\nPROFIT/LOSS BEFORE TAXATION RS. IN MILLION 96,892.349\nPROFIT/LOSS AFTER TAXATION RS. IN MILLION 66,346.125\nEPS = 15.43\nBOOK CLOSURE FROM 10/06/2021\nBOOK CLOSURE TO 17/06/2021\nFINANCIAL RESULT FOR THE NINE MONTHS ENDED 31/03/2021",
+        "financial_results": [
+            {
+                "result_type": "UNCONSOLIDATED",
+                "result_period": "NINE MONTHS",
+                "period_ending": "2021-03-31",
+                "profit_before_tax_mln": "96892.349",
+                "profit_after_tax_mln": "66346.125",
+                "eps": "15.43"
+            }
+        ],
+        "corporate_actions": {
+            "dividend": "18%(iii)",
+            "bonus": null,
+            "book_closure_start": "2021-06-10",
+            "book_closure_end": "2021-06-17",
+            "agm_date": null
+        }
+    },
+    {
+        "symbol": "OGDC",
+        "company_name": "Oil and Gas Development Company Limited",
+        "announcement_date": "2021-09-28",
+        "raw_text": "FINANCIAL RESULT FOR THE YEAR ENDED 30/06/2021\nDIVIDEND = 15%(F)\nPROFIT/LOSS BEFORE TAXATION RS. IN MILLION 128,986.345\nPROFIT/LOSS AFTER TAXATION RS. IN MILLION 91,534.424\nEPS = 21.28\nANNUAL GENERAL MEETING HELD ON 28/10/2021\nBOOK CLOSURE FROM 22/10/2021\nBOOK CLOSURE TO 28/10/2021",
+        "financial_results": [
+            {
+                "result_type": "UNCONSOLIDATED",
+                "result_period": "YEAR",
+                "period_ending": "2021-06-30",
+                "profit_before_tax_mln": "128986.345",
+                "profit_after_tax_mln": "91534.424",
+                "eps": "21.28"
+            }
+        ],
+        "corporate_actions": {
+            "dividend": "15%(F)",
+            "bonus": null,
+            "book_closure_start": "2021-10-22",
+            "book_closure_end": "2021-10-28",
+            "agm_date": "2021-10-28"
+        }
+    },
+    {
+        "symbol": "OGDC",
+        "company_name": "Oil and Gas Development Company Limited",
+        "announcement_date": "2021-10-29",
+        "raw_text": "FINANCIAL RESULT FOR THE FIRST QUARTER ENDED 30/09/2021\nDIVIDEND = 17.50%(i)\nPROFIT/LOSS BEFORE TAXATION RS. IN MILLION 25,269.655\nPROFIT/LOSS AFTER TAXATION RS. IN MILLION 33,629.413\nEPS = 7.82\nBOOK CLOSURE FROM 10/11/2021\nBOOK CLOSURE TO 12/11/2021",
+        "financial_results": [
+            {
+                "result_type": "UNCONSOLIDATED",
+                "result_period": "FIRST QUARTER",
+                "period_ending": "2021-09-30",
+                "profit_before_tax_mln": "25269.655",
+                "profit_after_tax_mln": "33629.413",
+                "eps": "7.82"
+            }
+        ],
+        "corporate_actions": {
+            "dividend": "17.50%(i)",
+            "bonus": null,
+            "book_closure_start": "2021-11-10",
+            "book_closure_end": "2021-11-12",
+            "agm_date": null
+        }
+    },
+    {
+        "symbol": "OGDC",
+        "company_name": "Oil and Gas Development Company Limited",
+        "announcement_date": "2022-02-23",
+        "raw_text": "BOOK CLOSURE TO 11/03/2022\nFINANCIAL RESULT FOR THE HALF YEAR ENDED 31/12/2021\nDIVIDEND = 20% (ii)\nPROFIT/LOSS BEFORE TAXATION RS. IN MILLION 105,171.741\nPROFIT/LOSS AFTER TAXATION RS. IN MILLION 68,882.792\nEPS = 16.02\nBOOK CLOSURE FROM 09/03/2022",
+        "financial_results": [
+            {
+                "result_type": "UNCONSOLIDATED",
+                "result_period": "HALF YEAR",
+                "period_ending": "2021-12-31",
+                "profit_before_tax_mln": "105171.741",
+                "profit_after_tax_mln": "68882.792",
+                "eps": "16.02"
+            }
+        ],
+        "corporate_actions": {
+            "dividend": "20% (ii)",
+            "bonus": null,
+            "book_closure_start": "2022-03-09",
+            "book_closure_end": "2022-03-11",
+            "agm_date": null
+        }
+    },
+    {
+        "symbol": "OGDC",
+        "company_name": "Oil and Gas Development Company Limited",
+        "announcement_date": "2022-05-06",
+        "raw_text": "FINANCIAL RESULT FOR THE NINE MONTHS ENDED 31/03/2022\nDIVIDEND = 10%(iii)\nPROFIT/LOSS BEFORE TAXATION RS. IN MILLION 169,950.576\nPROFIT/LOSS AFTER TAXATION RS. IN MILLION 112,044.029\nEPS = 26.05\nBOOK CLOSURE FROM 13/05/2022\nBOOK CLOSURE TO 17/05/2022",
+        "financial_results": [
+            {
+                "result_type": "UNCONSOLIDATED",
+                "result_period": "NINE MONTHS",
+                "period_ending": "2022-03-31",
+                "profit_before_tax_mln": "169950.576",
+                "profit_after_tax_mln": "112044.029",
+                "eps": "26.05"
+            }
+        ],
+        "corporate_actions": {
+            "dividend": "10%(iii)",
+            "bonus": null,
+            "book_closure_start": "2022-05-13",
+            "book_closure_end": "2022-05-17",
+            "agm_date": null
+        }
+    },
+    {
+        "symbol": "OGDC",
+        "company_name": "Oil and Gas Development Company Limited",
+        "announcement_date": "2022-09-23",
+        "raw_text": "DIVIDEND = 25%(F)\nPROFIT/LOSS BEFORE TAXATION RS. IN MILLION 232,521.360\nPROFIT/LOSS AFTER TAXATION RS. IN MILLION 133,783.747\nEPS = 31.11\nANNUAL GENERAL MEETING HELD ON 25/10/2022\nBOOK CLOSURE FROM 18/10/2022\nBOOK CLOSURE TO 25/10/2022\nFINANCIAL RESULT FOR THE YEAR ENDED 30/06/2022",
+        "financial_results": [
+            {
+                "result_type": "UNCONSOLIDATED",
+                "result_period": "YEAR",
+                "period_ending": "2022-06-30",
+                "profit_before_tax_mln": "232521.360",
+                "profit_after_tax_mln": "133783.747",
+                "eps": "31.11"
+            }
+        ],
+        "corporate_actions": {
+            "dividend": "25%(F)",
+            "bonus": null,
+            "book_closure_start": "2022-10-18",
+            "book_closure_end": "2022-10-25",
+            "agm_date": "2022-10-25"
+        }
+    },
+    {
+        "symbol": "OGDC",
+        "company_name": "Oil and Gas Development Company Limited",
+        "announcement_date": "2022-10-25",
+        "raw_text": "FINANCIAL RESULT FOR THE FIRST QUARTER ENDED 30/09/2022\nDIVIDEND = 17.50%(i)\nBOOK CLOSURE TO 10/11/2022\nBOOK CLOSURE FROM 08/11/2022\nEPS = 12.39\nPROFIT/LOSS BEFORE TAXATION RS. IN MILLION 88,207.320\nPROFIT/LOSS AFTER TAXATION RS. IN MILLION 53,302.539",
+        "financial_results": [
+            {
+                "result_type": "UNCONSOLIDATED",
+                "result_period": "FIRST QUARTER",
+                "period_ending": "2022-09-30",
+                "profit_before_tax_mln": "88207.320",
+                "profit_after_tax_mln": "53302.539",
+                "eps": "12.39"
+            }
+        ],
+        "corporate_actions": {
+            "dividend": "17.50%(i)",
+            "bonus": null,
+            "book_closure_start": "2022-11-08",
+            "book_closure_end": "2022-11-10",
+            "agm_date": null
+        }
+    },
+    {
+        "symbol": "OGDC",
+        "company_name": "Oil and Gas Development Company Limited",
+        "announcement_date": "2023-02-22",
+        "raw_text": "FINANCIAL RESULT FOR THE HALF YEAR ENDED 31/12/2022\nDIVIDEND = 22.50%(ii)\nPROFIT/LOSS BEFORE TAXATION RS. IN MILLION 152,847.599\nPROFIT/LOSS AFTER TAXATION RS. IN MILLION 95,011.671\nEPS = 22.09\nBOOK CLOSURE FROM 08/03/2023\nBOOK CLOSURE TO 10/03/2023",
+        "financial_results": [
+            {
+                "result_type": "UNCONSOLIDATED",
+                "result_period": "HALF YEAR",
+                "period_ending": "2022-12-31",
+                "profit_before_tax_mln": "152847.599",
+                "profit_after_tax_mln": "95011.671",
+                "eps": "22.09"
+            }
+        ],
+        "corporate_actions": {
+            "dividend": "22.50%(ii)",
+            "bonus": null,
+            "book_closure_start": "2023-03-08",
+            "book_closure_end": "2023-03-10",
+            "agm_date": null
+        }
+    },
+    {
+        "symbol": "OGDC",
+        "company_name": "Oil and Gas Development Company Limited",
+        "announcement_date": "2023-04-27",
+        "raw_text": "FINANCIAL RESULT FOR THE NINE MONTHS ENDED 31/03/2023\nDIVIDEND = 18%(iii)\nPROFIT/LOSS BEFORE TAXATION RS. IN MILLION 252,619.792\nPROFIT/LOSS AFTER TAXATION RS. IN MILLION 159,638.904\nEPS = 37.12\nBOOK CLOSURE FROM 10/05/2023\nBOOK CLOSURE TO 12/05/2023",
+        "financial_results": [
+            {
+                "result_type": "UNCONSOLIDATED",
+                "result_period": "NINE MONTHS",
+                "period_ending": "2023-03-31",
+                "profit_before_tax_mln": "252619.792",
+                "profit_after_tax_mln": "159638.904",
+                "eps": "37.12"
+            }
+        ],
+        "corporate_actions": {
+            "dividend": "18%(iii)",
+            "bonus": null,
+            "book_closure_start": "2023-05-10",
+            "book_closure_end": "2023-05-12",
+            "agm_date": null
+        }
+    },
+    {
+        "symbol": "OGDC",
+        "company_name": "Oil and Gas Development Company Limited",
+        "announcement_date": "2023-09-28",
+        "raw_text": "FINANCIAL RESULT FOR THE YEAR ENDED 30/06/2023\nPROFIT/LOSS BEFORE TAXATION RS. IN MILLION 383,772.763\nPROFIT/LOSS AFTER TAXATION RS. IN MILLION 224,617.797\nEPS = 52.23\nDIVIDEND = 27.5%\nBOOK CLOSURE FROM 19/10/2023\nBOOK CLOSURE TO 26/10/2023",
+        "financial_results": [
+            {
+                "result_type": "UNCONSOLIDATED",
+                "result_period": "YEAR",
+                "period_ending": "2023-06-30",
+                "profit_before_tax_mln": "383772.763",
+                "profit_after_tax_mln": "224617.797",
+                "eps": "52.23"
+            }
+        ],
+        "corporate_actions": {
+            "dividend": "27.5%",
+            "bonus": null,
+            "book_closure_start": "2023-10-19",
+            "book_closure_end": "2023-10-26",
+            "agm_date": null
+        }
+    },
+    {
+        "symbol": "OGDC",
+        "company_name": "Oil and Gas Development Company Limited",
+        "announcement_date": "2023-11-01",
+        "raw_text": "FINANCIAL RESULT FOR THE FIRST QUARTER ENDED 30/09/2023\nPROFIT/LOSS BEFORE TAXATION RS. IN MILLION 86,174.433\nPROFIT/LOSS AFTER TAXATION RS. IN MILLION 49,037.604\nEPS = 11.40\nDIVIDEND = 16%(i)\nBOOK CLOSURE FROM 14/11/2023\nBOOK CLOSURE TO 16/11/2023",
+        "financial_results": [
+            {
+                "result_type": "UNCONSOLIDATED",
+                "result_period": "FIRST QUARTER",
+                "period_ending": "2023-09-30",
+                "profit_before_tax_mln": "86174.433",
+                "profit_after_tax_mln": "49037.604",
+                "eps": "11.40"
+            }
+        ],
+        "corporate_actions": {
+            "dividend": "16%(i)",
+            "bonus": null,
+            "book_closure_start": "2023-11-14",
+            "book_closure_end": "2023-11-16",
+            "agm_date": null
+        }
+    },
+    {
+        "symbol": "OGDC",
+        "company_name": "Oil and Gas Development Company Limited",
+        "announcement_date": "2024-02-27",
+        "raw_text": "FINANCIAL RESULT FOR THE HALF YEAR ENDED 31/12/2023\nPROFIT/LOSS BEFORE TAXATION RS. IN MILLION 158,315.421\nPROFIT/LOSS AFTER TAXATION RS. IN MILLION 123,296.016\nEPS = 28.67\nDIVIDEND = 25%(ii)\nBOOK CLOSURE FROM 12/03/2024\nBOOK CLOSURE TO 14/03/2024",
+        "financial_results": [
+            {
+                "result_type": "UNCONSOLIDATED",
+                "result_period": "HALF YEAR",
+                "period_ending": "2023-12-31",
+                "profit_before_tax_mln": "158315.421",
+                "profit_after_tax_mln": "123296.016",
+                "eps": "28.67"
+            }
+        ],
+        "corporate_actions": {
+            "dividend": "25%(ii)",
+            "bonus": null,
+            "book_closure_start": "2024-03-12",
+            "book_closure_end": "2024-03-14",
+            "agm_date": null
+        }
+    },
+    {
+        "symbol": "OGDC",
+        "company_name": "Oil and Gas Development Company Limited",
+        "announcement_date": "2024-04-29",
+        "raw_text": "FINANCIAL RESULT FOR THE NINE MONTHS ENDED 31/03/2024\nPROFIT/LOSS BEFORE TAXATION RS. IN MILLION 239,601.443\nPROFIT/LOSS AFTER TAXATION RS. IN MILLION 171,103.709\nEPS = 39.78\nDIVIDEND = 20%(iii)\nBOOK CLOSURE FROM 10/05/2024\nBOOK CLOSURE TO 13/05/2024",
+        "financial_results": [
+            {
+                "result_type": "UNCONSOLIDATED",
+                "result_period": "NINE MONTHS",
+                "period_ending": "2024-03-31",
+                "profit_before_tax_mln": "239601.443",
+                "profit_after_tax_mln": "171103.709",
+                "eps": "39.78"
+            }
+        ],
+        "corporate_actions": {
+            "dividend": "20%(iii)",
+            "bonus": null,
+            "book_closure_start": "2024-05-10",
+            "book_closure_end": "2024-05-13",
+            "agm_date": null
+        }
+    },
+    {
+        "symbol": "OGDC",
+        "company_name": "Oil and Gas Development Company Limited",
+        "announcement_date": "2024-09-23",
+        "raw_text": "FINANCIAL RESULT FOR THE YEAR ENDED 30/06/2024\nPROFIT/LOSS BEFORE TAXATION RS. IN MILLION 293,787.094\nPROFIT/LOSS AFTER TAXATION RS. IN MILLION 208,975.771\nEPS = 48.59\nDIVIDEND = 40%(F)\nANNUAL GENERAL MEETING WILL BE HELD ON 25/10/2024\nBOOK CLOSURE FROM 18/10/2024\nBOOK CLOSURE TO 25/10/2024",
+        "financial_results": [
+            {
+                "result_type": "UNCONSOLIDATED",
+                "result_period": "YEAR",
+                "period_ending": "2024-06-30",
+                "profit_before_tax_mln": "293787.094",
+                "profit_after_tax_mln": "208975.771",
+                "eps": "48.59"
+            }
+        ],
+        "corporate_actions": {
+            "dividend": "40%(F)",
+            "bonus": null,
+            "book_closure_start": "2024-10-18",
+            "book_closure_end": "2024-10-25",
+            "agm_date": "2024-10-25"
+        }
+    },
+    {
+        "symbol": "OGDC",
+        "company_name": "Oil and Gas Development Company Limited",
+        "announcement_date": "2024-10-25",
+        "raw_text": "FINANCIAL RESULT FOR THE FIRST QUARTER ENDED 30/09/2024\nPROFIT/LOSS BEFORE TAXATION RS. IN MILLION 73,620.143\nPROFIT/LOSS AFTER TAXATION RS. IN MILLION 41,019.911\nEPS = 9.54\nDIVIDEND = 30%(i)\nBOOK CLOSURE FROM 08/11/2024\nBOOK CLOSURE TO 11/11/2024",
+        "financial_results": [
+            {
+                "result_type": "UNCONSOLIDATED",
+                "result_period": "FIRST QUARTER",
+                "period_ending": "2024-09-30",
+                "profit_before_tax_mln": "73620.143",
+                "profit_after_tax_mln": "41019.911",
+                "eps": "9.54"
+            }
+        ],
+        "corporate_actions": {
+            "dividend": "30%(i)",
+            "bonus": null,
+            "book_closure_start": "2024-11-08",
+            "book_closure_end": "2024-11-11",
+            "agm_date": null
+        }
+    },
+    {
+        "symbol": "OGDC",
+        "company_name": "Oil and Gas Development Company Limited",
+        "announcement_date": "2025-02-28",
+        "raw_text": "FINANCIAL RESULT FOR THE HALF YEAR ENDED 31/12/2024\nPROFIT/LOSS BEFORE TAXATION RS. IN MILLION 155,819.441\nPROFIT/LOSS AFTER TAXATION RS. IN MILLION 82,456.666\nEPS = 19.17\nDIVIDEND = 40.5%(ii)\nBOOK CLOSURE FROM 12/03/2025\nBOOK CLOSURE TO 14/03/2025",
+        "financial_results": [
+            {
+                "result_type": "UNCONSOLIDATED",
+                "result_period": "HALF YEAR",
+                "period_ending": "2024-12-31",
+                "profit_before_tax_mln": "155819.441",
+                "profit_after_tax_mln": "82456.666",
+                "eps": "19.17"
+            }
+        ],
+        "corporate_actions": {
+            "dividend": "40.5%(ii)",
+            "bonus": null,
+            "book_closure_start": "2025-03-12",
+            "book_closure_end": "2025-03-14",
+            "agm_date": null
+        }
+    },
+    {
+        "symbol": "OGDC",
+        "company_name": "Oil and Gas Development Company Limited",
+        "announcement_date": "2025-04-30",
+        "raw_text": "FINANCIAL RESULT FOR THE NINE MONTHS ENDED 31/03/2025\nPROFIT/LOSS BEFORE TAXATION RS. IN MILLION 223,099.795\nPROFIT/LOSS AFTER TAXATION RS. IN MILLION 129,605.908\nEPS = 30.13\nDIVIDEND = 30%(iii)\nBOOK CLOSURE FROM 13/05/2025\nBOOK CLOSURE TO 19/05/2025",
+        "financial_results": [
+            {
+                "result_type": "UNCONSOLIDATED",
+                "result_period": "NINE MONTHS",
+                "period_ending": "2025-03-31",
+                "profit_before_tax_mln": "223099.795",
+                "profit_after_tax_mln": "129605.908",
+                "eps": "30.13"
+            }
+        ],
+        "corporate_actions": {
+            "dividend": "30%(iii)",
+            "bonus": null,
+            "book_closure_start": "2025-05-13",
+            "book_closure_end": "2025-05-19",
+            "agm_date": null
+        }
+    },
+    {
+        "symbol": "OGDC",
+        "company_name": "Oil and Gas Development Company Limited",
+        "announcement_date": "2025-09-23",
+        "raw_text": "FINANCIAL RESULT FOR THE YEAR ENDED 30/06/2025\n(UNCONSOLIDATED) PROFIT/LOSS BEFORE TAXATION RS. IN MILLION 279,314.861\n(UNCONSOLIDATED) PROFIT/LOSS AFTER TAXATION RS. IN MILLION 169,903.614\n(UNCONSOLIDATED) EPS = 39.50\n(CONSOLIDATED) PROFIT/LOSS BEFORE TAXATION RS. IN MILLION 279,313.761\n(CONSOLIDATED) PROFIT/LOSS AFTER TAXATION RS. IN MILLION 169,902.514\n(CONSOLIDATED) EPS = 39.50\nDIVIDEND = 50%(F)\nANNUAL GENERAL MEETING WILL BE HELD ON 27/10/2025\nBOOK CLOSURE FROM 23/10/2025\nBOOK CLOSURE TO 27/10/2025",
+        "financial_results": [
+            {
+                "result_type": "UNCONSOLIDATED",
+                "result_period": "YEAR",
+                "period_ending": "2025-06-30",
+                "profit_before_tax_mln": "279314.861",
+                "profit_after_tax_mln": "169903.614",
+                "eps": "39.50"
+            },
+            {
+                "result_type": "CONSOLIDATED",
+                "result_period": "YEAR",
+                "period_ending": "2025-06-30",
+                "profit_before_tax_mln": "279313.761",
+                "profit_after_tax_mln": "169902.514",
+                "eps": "39.50"
+            }
+        ],
+        "corporate_actions": {
+            "dividend": "50%(F)",
+            "bonus": null,
+            "book_closure_start": "2025-10-23",
+            "book_closure_end": "2025-10-27",
+            "agm_date": "2025-10-27"
+        }
+    },
+    {
+        "symbol": "OGDC",
+        "company_name": "Oil and Gas Development Company Limited",
+        "announcement_date": "2025-10-29",
+        "raw_text": "FINANCIAL RESULT FOR THE FIRST QUARTER ENDED 30/09/2025\n(UNCONSOLIDATED) PROFIT/LOSS BEFORE TAXATION RS. IN MILLION 61,982.220\n(UNCONSOLIDATED) PROFIT/LOSS AFTER TAXATION RS. IN MILLION 38,304.846\n(UNCONSOLIDATED) EPS = 8.91\n(CONSOLIDATED) PROFIT/LOSS BEFORE TAXATION RS. IN MILLION 61,982.220\n(CONSOLIDATED) PROFIT/LOSS AFTER TAXATION RS. IN MILLION 38,304.846\n(CONSOLIDATED) EPS = 8.91\nDIVIDEND = 35%(i)\nBOOK CLOSURE FROM 11/11/2025\nBOOK CLOSURE TO 12/11/2025",
+        "financial_results": [
+            {
+                "result_type": "UNCONSOLIDATED",
+                "result_period": "FIRST QUARTER",
+                "period_ending": "2025-09-30",
+                "profit_before_tax_mln": "61982.220",
+                "profit_after_tax_mln": "38304.846",
+                "eps": "8.91"
+            },
+            {
+                "result_type": "CONSOLIDATED",
+                "result_period": "FIRST QUARTER",
+                "period_ending": "2025-09-30",
+                "profit_before_tax_mln": "61982.220",
+                "profit_after_tax_mln": "38304.846",
+                "eps": "8.91"
+            }
+        ],
+        "corporate_actions": {
+            "dividend": "35%(i)",
+            "bonus": null,
+            "book_closure_start": "2025-11-11",
+            "book_closure_end": "2025-11-12",
+            "agm_date": null
+        }
+    },
+    {
+        "symbol": "OGDC",
+        "company_name": "Oil and Gas Development Company Limited",
+        "announcement_date": "2026-02-23",
+        "raw_text": "FINANCIAL RESULT FOR THE HALF YEAR ENDED 31/12/2025\n(UNCONSOLIDATED) PROFIT/LOSS BEFORE TAXATION RS. IN MILLION 110,862.149\n(UNCONSOLIDATED) PROFIT/LOSS AFTER TAXATION RS. IN MILLION 73,019.248\n(UNCONSOLIDATED) EPS = 16.98\n(CONSOLIDATED) PROFIT/LOSS BEFORE TAXATION RS. IN MILLION 110,862.149\n(CONSOLIDATED) PROFIT/LOSS AFTER TAXATION RS. IN MILLION 73,019.248\n(CONSOLIDATED) EPS = 16.98\nDIVIDEND = 42.50%(ii)\nBOOK CLOSURE FROM 07/03/2026\nBOOK CLOSURE TO 09/03/2026",
+        "financial_results": [
+            {
+                "result_type": "UNCONSOLIDATED",
+                "result_period": "HALF YEAR",
+                "period_ending": "2025-12-31",
+                "profit_before_tax_mln": "110862.149",
+                "profit_after_tax_mln": "73019.248",
+                "eps": "16.98"
+            },
+            {
+                "result_type": "CONSOLIDATED",
+                "result_period": "HALF YEAR",
+                "period_ending": "2025-12-31",
+                "profit_before_tax_mln": "110862.149",
+                "profit_after_tax_mln": "73019.248",
+                "eps": "16.98"
+            }
+        ],
+        "corporate_actions": {
+            "dividend": "42.50%(ii)",
+            "bonus": null,
+            "book_closure_start": "2026-03-07",
+            "book_closure_end": "2026-03-09",
+            "agm_date": null
+        }
+    },
+    {
+        "symbol": "OGDC",
+        "company_name": "Oil and Gas Development Company Limited",
+        "announcement_date": "2026-04-29",
+        "raw_text": "FINANCIAL RESULT FOR THE NINE MONTHS ENDED 31/03/2026\n(UNCONSOLIDATED) PROFIT/LOSS BEFORE TAXATION RS. IN MILLION 175,804.311\n(UNCONSOLIDATED) PROFIT/LOSS AFTER TAXATION RS. IN MILLION 115,263.205\n(UNCONSOLIDATED) EPS = 26.80\n(CONSOLIDATED) PROFIT/LOSS BEFORE TAXATION RS. IN MILLION 175,798.519\n(CONSOLIDATED) PROFIT/LOSS AFTER TAXATION RS. IN MILLION 115,262.705\n(CONSOLIDATED) EPS = 26.80\nDIVIDEND = 32.50%(iii)\nBOOK CLOSURE FROM 12/05/2026\nBOOK CLOSURE TO 13/05/2026",
+        "financial_results": [
+            {
+                "result_type": "UNCONSOLIDATED",
+                "result_period": "NINE MONTHS",
+                "period_ending": "2026-03-31",
+                "profit_before_tax_mln": "175804.311",
+                "profit_after_tax_mln": "115263.205",
+                "eps": "26.80"
+            },
+            {
+                "result_type": "CONSOLIDATED",
+                "result_period": "NINE MONTHS",
+                "period_ending": "2026-03-31",
+                "profit_before_tax_mln": "175798.519",
+                "profit_after_tax_mln": "115262.705",
+                "eps": "26.80"
+            }
+        ],
+        "corporate_actions": {
+            "dividend": "32.50%(iii)",
+            "bonus": null,
+            "book_closure_start": "2026-05-12",
+            "book_closure_end": "2026-05-13",
+            "agm_date": null
+        }
+    }
+]

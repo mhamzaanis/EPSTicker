@@ -1,0 +1,356 @@
+[
+    {
+        "symbol": "MEBL",
+        "company_name": "Meezan Bank Limited",
+        "announcement_date": "2018-02-14",
+        "raw_text": "FINANCIAL RESULT FOR THE YEAR ENDED 31/12/2017\n(UNCONSOLIDATED) PROFIT/LOSS BEFORE TAXATION RS. IN MILLION 10,252.010\n(UNCONSOLIDATED) PROFIT/LOSS AFTER TAXATION RS. IN MILLION 6,312.767\n(UNCONSOLIDATED) EPS = 6.13\n(CONSOLIDATED) PROFIT/LOSS BEFORE TAXATION RS. IN MILLION 9,932.844\n(CONSOLIDATED) PROFIT/LOSS AFTER TAXATION RS. IN MILLION 5,779.993\n(CONSOLIDATED) EPS = 5.46\nDIVIDEND = 12.50%\nANNUAL GENERAL MEETING WILL BE HELD ON 28/03/2018\nBOOK CLOSURE FROM 21/03/2018\nBOOK CLOSURE TO 28/03/2018",
+        "financial_results": [
+            {
+                "result_type": "UNCONSOLIDATED",
+                "result_period": "YEAR",
+                "period_ending": "2017-12-31",
+                "profit_before_tax_mln": "10252.010",
+                "profit_after_tax_mln": "6312.767",
+                "eps": "6.13"
+            },
+            {
+                "result_type": "CONSOLIDATED",
+                "result_period": "YEAR",
+                "period_ending": "2017-12-31",
+                "profit_before_tax_mln": "9932.844",
+                "profit_after_tax_mln": "5779.993",
+                "eps": "5.46"
+            }
+        ],
+        "corporate_actions": {
+            "dividend": "12.50%",
+            "bonus": null,
+            "book_closure_start": "2018-03-21",
+            "book_closure_end": "2018-03-28",
+            "agm_date": "2018-03-28"
+        }
+    },
+    {
+        "symbol": "MEBL",
+        "company_name": "Meezan Bank Limited",
+        "announcement_date": "2018-04-19",
+        "raw_text": "FINANCIAL RESULT FOR THE FIRST QUARTER ENDED 31/03/2018\n(UNCONSOLIDATED) PROFIT/LOSS BEFORE TAXATION RS. IN MILLION 2,980.036\n(UNCONSOLIDATED) PROFIT/LOSS AFTER TAXATION RS. IN MILLION 1,914.939\n(UNCONSOLIDATED) EPS = 1.80\n(CONSOLIDATED) PROFIT/LOSS BEFORE TAXATION RS. IN MILLION 3,564.495\n(CONSOLIDATED) PROFIT/LOSS AFTER TAXATION RS. IN MILLION 2,345.884\n(CONSOLIDATED) EPS = 2.09",
+        "financial_results": [
+            {
+                "result_type": "UNCONSOLIDATED",
+                "result_period": "FIRST QUARTER",
+                "period_ending": "2018-03-31",
+                "profit_before_tax_mln": "2980.036",
+                "profit_after_tax_mln": "1914.939",
+                "eps": "1.80"
+            },
+            {
+                "result_type": "CONSOLIDATED",
+                "result_period": "FIRST QUARTER",
+                "period_ending": "2018-03-31",
+                "profit_before_tax_mln": "3564.495",
+                "profit_after_tax_mln": "2345.884",
+                "eps": "2.09"
+            }
+        ],
+        "corporate_actions": null
+    },
+    {
+        "symbol": "MEBL",
+        "company_name": "Meezan Bank Limited",
+        "announcement_date": "2018-08-29",
+        "raw_text": "FINANCIAL RESULT FOR THE HALF YEAR ENDED 30/06/2018\n(UNCONSOLIDATED) PROFIT/LOSS BEFORE TAXATION RS. IN MILLION 6,840.446\n(UNCONSOLIDATED) PROFIT/LOSS AFTER TAXATION RS. IN MILLION 4,126.295\n(UNCONSOLIDATED) EPS = 3.88\n(CONSOLIDATED) PROFIT/LOSS BEFORE TAXATION RS. IN MILLION 7,230.883\n(CONSOLIDATED) PROFIT/LOSS AFTER TAXATION RS. IN MILLION 4,288.663\n(CONSOLIDATED) EPS = 3.90\nDIVIDEND = 15%\nBONUS ISSUE = 10%\nBOOK CLOSURE FROM 24/09/2018\nBOOK CLOSURE TO 02/10/2018",
+        "financial_results": [
+            {
+                "result_type": "UNCONSOLIDATED",
+                "result_period": "HALF YEAR",
+                "period_ending": "2018-06-30",
+                "profit_before_tax_mln": "6840.446",
+                "profit_after_tax_mln": "4126.295",
+                "eps": "3.88"
+            },
+            {
+                "result_type": "CONSOLIDATED",
+                "result_period": "HALF YEAR",
+                "period_ending": "2018-06-30",
+                "profit_before_tax_mln": "7230.883",
+                "profit_after_tax_mln": "4288.663",
+                "eps": "3.90"
+            }
+        ],
+        "corporate_actions": {
+            "dividend": "15%",
+            "bonus": null,
+            "book_closure_start": "2018-09-24",
+            "book_closure_end": "2018-10-02",
+            "agm_date": null
+        }
+    },
+    {
+        "symbol": "MEBL",
+        "company_name": "Meezan Bank Limited",
+        "announcement_date": "2018-10-24",
+        "raw_text": "FINANCIAL RESULT FOR THE NINE MONTHS ENDED 30/09/2018\n(UNCONSOLIDATED) PROFIT/LOSS BEFORE TAXATION RS. IN MILLION 10,321.935\n(UNCONSOLIDATED) PROFIT/LOSS AFTER TAXATION RS. IN MILLION 6,247.569\n(UNCONSOLIDATED) EPS = 5.88\n(CONSOLIDATED) PROFIT/LOSS BEFORE TAXATION RS. IN MILLION 10,876.706\n(CONSOLIDATED) PROFIT/LOSS AFTER TAXATION RS. IN MILLION 6,602.235\n(CONSOLIDATED) EPS = 6.04",
+        "financial_results": [
+            {
+                "result_type": "UNCONSOLIDATED",
+                "result_period": "NINE MONTHS",
+                "period_ending": "2018-09-30",
+                "profit_before_tax_mln": "10321.935",
+                "profit_after_tax_mln": "6247.569",
+                "eps": "5.88"
+            },
+            {
+                "result_type": "CONSOLIDATED",
+                "result_period": "NINE MONTHS",
+                "period_ending": "2018-09-30",
+                "profit_before_tax_mln": "10876.706",
+                "profit_after_tax_mln": "6602.235",
+                "eps": "6.04"
+            }
+        ],
+        "corporate_actions": null
+    },
+    {
+        "symbol": "MEBL",
+        "company_name": "Meezan Bank Limited",
+        "announcement_date": "2019-02-21",
+        "raw_text": "FINANCIAL RESULT FOR THE YEAR ENDED 31/12/2018\n(UNCONSOLIDATED) PROFIT/LOSS BEFORE TAXATION RS. IN MILLION 14,792.406\n(UNCONSOLIDATED) PROFIT/LOSS AFTER TAXATION RS. IN MILLION 8,962.200\n(UNCONSOLIDATED) EPS = 7.67\n(CONSOLIDATED) PROFIT/LOSS BEFORE TAXATION RS. IN MILLION 15,179.990\n(CONSOLIDATED) PROFIT/LOSS AFTER TAXATION RS. IN MILLION 9,133.910\n(CONSOLIDATED) EPS = 7.66\nDIVIDEND = 20%(F)\nANNUAL GENERAL MEETING WILL BE HELD ON 28/03/2019\nBOOK CLOSURE FROM 21/03/2019\nBOOK CLOSURE TO 28/03/2019",
+        "financial_results": [
+            {
+                "result_type": "UNCONSOLIDATED",
+                "result_period": "YEAR",
+                "period_ending": "2018-12-31",
+                "profit_before_tax_mln": "14792.406",
+                "profit_after_tax_mln": "8962.200",
+                "eps": "7.67"
+            },
+            {
+                "result_type": "CONSOLIDATED",
+                "result_period": "YEAR",
+                "period_ending": "2018-12-31",
+                "profit_before_tax_mln": "15179.990",
+                "profit_after_tax_mln": "9133.910",
+                "eps": "7.66"
+            }
+        ],
+        "corporate_actions": {
+            "dividend": "20%(F)",
+            "bonus": null,
+            "book_closure_start": "2019-03-21",
+            "book_closure_end": "2019-03-28",
+            "agm_date": "2019-03-28"
+        }
+    },
+    {
+        "symbol": "MEBL",
+        "company_name": "Meezan Bank Limited",
+        "announcement_date": "2019-04-25",
+        "raw_text": "FINANCIAL RESULT FOR THE FIRST QUARTER ENDED 31/03/2019\n(UNCONSOLIDATED) PROFIT/LOSS BEFORE TAXATION RS. IN MILLION 5,535.777\n(UNCONSOLIDATED) PROFIT/LOSS AFTER TAXATION RS. IN MILLION, 2,851.342\n(UNCONSOLIDATED) EPS = 2.44\n(CONSOLIDATED) PROFIT/LOSS BEFORE TAXATION RS. IN MILLION 5,874.928\n(CONSOLIDATED) PROFIT/LOSS AFTER TAXATION RS. IN MILLION 3,100.427\n(CONSOLIDATED) EPS = 2.59\nDIVIDEND = 10%(i)\nBONUS ISSUE = 10%\nBOOK CLOSURE FROM 16/05/2019\nBOOK CLOSURE TO 22/05/2019",
+        "financial_results": [
+            {
+                "result_type": "UNCONSOLIDATED",
+                "result_period": "FIRST QUARTER",
+                "period_ending": "2019-03-31",
+                "profit_before_tax_mln": "5535.777",
+                "profit_after_tax_mln": "2851.342",
+                "eps": "2.44"
+            },
+            {
+                "result_type": "CONSOLIDATED",
+                "result_period": "FIRST QUARTER",
+                "period_ending": "2019-03-31",
+                "profit_before_tax_mln": "5874.928",
+                "profit_after_tax_mln": "3100.427",
+                "eps": "2.59"
+            }
+        ],
+        "corporate_actions": {
+            "dividend": "10%(i)",
+            "bonus": null,
+            "book_closure_start": "2019-05-16",
+            "book_closure_end": "2019-05-22",
+            "agm_date": null
+        }
+    },
+    {
+        "symbol": "MEBL",
+        "company_name": "Meezan Bank Limited",
+        "announcement_date": "2019-08-28",
+        "raw_text": "FINANCIAL RESULT FOR THE HALF YEAR ENDED 30/06/2019\n(UNCONSOLIDATED) PROFIT/LOSS BEFORE TAXATION RS. IN MILLION 12,437.144\n(UNCONSOLIDATED) PROFIT/LOSS AFTER TAXATION RS. IN MILLION 7,001.747\n(UNCONSOLIDATED) EPS = 5.44\n(CONSOLIDATED) PROFIT/LOSS BEFORE TAXATION RS. IN MILLION 12,499.053\n(CONSOLIDATED) PROFIT/LOSS AFTER TAXATION RS. IN MILLION 7,004.007\n(CONSOLIDATED) EPS = 5.42\nDIVIDEND = 10%(ii)\nBOOK CLOSURE FROM 12/10/2019\nBOOK CLOSURE TO 21/10/2019",
+        "financial_results": [
+            {
+                "result_type": "UNCONSOLIDATED",
+                "result_period": "HALF YEAR",
+                "period_ending": "2019-06-30",
+                "profit_before_tax_mln": "12437.144",
+                "profit_after_tax_mln": "7001.747",
+                "eps": "5.44"
+            },
+            {
+                "result_type": "CONSOLIDATED",
+                "result_period": "HALF YEAR",
+                "period_ending": "2019-06-30",
+                "profit_before_tax_mln": "12499.053",
+                "profit_after_tax_mln": "7004.007",
+                "eps": "5.42"
+            }
+        ],
+        "corporate_actions": {
+            "dividend": "10%(ii)",
+            "bonus": null,
+            "book_closure_start": "2019-10-12",
+            "book_closure_end": "2019-10-21",
+            "agm_date": null
+        }
+    },
+    {
+        "symbol": "MEBL",
+        "company_name": "Meezan Bank Limited",
+        "announcement_date": "2019-10-25",
+        "raw_text": "FINANCIAL RESULT FOR THE NINE MONTHS ENDED 30/09/2019\n(UNCONSOLIDATED) PROFIT/LOSS BEFORE TAXATION RS. IN MILLION 18,998.153\n(UNCONSOLIDATED) PROFIT/LOSS AFTER TAXATION RS. IN MILLION 10,940.050\n(UNCONSOLIDATED) EPS = 8.51\n(CONSOLIDATED) PROFIT/LOSS BEFORE TAXATION RS. IN MILLION 19,049.946\n(CONSOLIDATED) PROFIT/LOSS AFTER TAXATION RS. IN MILLION 10,892.512\n(CONSOLIDATED) EPS = 8.44\nDIVIDEND = 10%(iii)\nBOOK CLOSURE FROM 12/12/2019\nBOOK CLOSURE TO 18/12/2019",
+        "financial_results": [
+            {
+                "result_type": "UNCONSOLIDATED",
+                "result_period": "NINE MONTHS",
+                "period_ending": "2019-09-30",
+                "profit_before_tax_mln": "18998.153",
+                "profit_after_tax_mln": "10940.050",
+                "eps": "8.51"
+            },
+            {
+                "result_type": "CONSOLIDATED",
+                "result_period": "NINE MONTHS",
+                "period_ending": "2019-09-30",
+                "profit_before_tax_mln": "19049.946",
+                "profit_after_tax_mln": "10892.512",
+                "eps": "8.44"
+            }
+        ],
+        "corporate_actions": {
+            "dividend": "10%(iii)",
+            "bonus": null,
+            "book_closure_start": "2019-12-12",
+            "book_closure_end": "2019-12-18",
+            "agm_date": null
+        }
+    },
+    {
+        "symbol": "MEBL",
+        "company_name": "Meezan Bank Limited",
+        "announcement_date": "2020-02-12",
+        "raw_text": "FINANCIAL RESULT FOR THE YEAR ENDED 31/12/2019\n(UNCONSOLIDATED) PROFIT/LOSS BEFORE TAXATION RS. IN MILLION 26,150.679\n(UNCONSOLIDATED) PROFIT/LOSS AFTER TAXATION RS. IN MILLION 15,232.074\n(UNCONSOLIDATED) EPS = 11.84\n(CONSOLIDATED) PROFIT/LOSS BEFORE TAXATION RS. IN MILLION 26,977.746\n(CONSOLIDATED) PROFIT/LOSS AFTER TAXATION RS. IN MILLION 15,779.639\n(CONSOLIDATED) EPS = 12.12\nDIVIDEND = 20%\nANNUAL GENERAL MEETING WILL BE HELD ON 26/03/2020\nBOOK CLOSURE FROM 19/03/2020\nBOOK CLOSURE TO 26/03/2020",
+        "financial_results": [
+            {
+                "result_type": "UNCONSOLIDATED",
+                "result_period": "YEAR",
+                "period_ending": "2019-12-31",
+                "profit_before_tax_mln": "26150.679",
+                "profit_after_tax_mln": "15232.074",
+                "eps": "11.84"
+            },
+            {
+                "result_type": "CONSOLIDATED",
+                "result_period": "YEAR",
+                "period_ending": "2019-12-31",
+                "profit_before_tax_mln": "26977.746",
+                "profit_after_tax_mln": "15779.639",
+                "eps": "12.12"
+            }
+        ],
+        "corporate_actions": {
+            "dividend": "20%",
+            "bonus": null,
+            "book_closure_start": "2020-03-19",
+            "book_closure_end": "2020-03-26",
+            "agm_date": "2020-03-26"
+        }
+    },
+    {
+        "symbol": "MEBL",
+        "company_name": "Meezan Bank Limited",
+        "announcement_date": "2020-05-06",
+        "raw_text": "FINANCIAL RESULT FOR THE FIRST QUARTER ENDED 31/03/2020\n(UNCONSOLIDATED) PROFIT/LOSS BEFORE TAXATION RS. IN MILLION 9,160.920\n(UNCONSOLIDATED) PROFIT/LOSS AFTER TAXATION RS. IN MILLION 5,505.456\n(UNCONSOLIDATED) EPS = 4.28\n(CONSOLIDATED) PROFIT/LOSS BEFORE TAXATION RS. IN MILLION 8,502.077\n(CONSOLIDATED) PROFIT/LOSS AFTER TAXATION RS. IN MILLION 4,943.241\n(CONSOLIDATED) EPS = 3.91",
+        "financial_results": [
+            {
+                "result_type": "UNCONSOLIDATED",
+                "result_period": "FIRST QUARTER",
+                "period_ending": "2020-03-31",
+                "profit_before_tax_mln": "9160.920",
+                "profit_after_tax_mln": "5505.456",
+                "eps": "4.28"
+            },
+            {
+                "result_type": "CONSOLIDATED",
+                "result_period": "FIRST QUARTER",
+                "period_ending": "2020-03-31",
+                "profit_before_tax_mln": "8502.077",
+                "profit_after_tax_mln": "4943.241",
+                "eps": "3.91"
+            }
+        ],
+        "corporate_actions": null
+    },
+    {
+        "symbol": "MEBL",
+        "company_name": "Meezan Bank Limited",
+        "announcement_date": "2020-08-18",
+        "raw_text": "FINANCIAL RESULT FOR THE HALF YEAR ENDED 30/06/2020\n(UNCONSOLIDATED) PROFIT/LOSS BEFORE TAXATION RS. IN MILLION 19,391.266\n(UNCONSOLIDATED) PROFIT/LOSS AFTER TAXATION RS. IN MILLION 11,676.948\n(UNCONSOLIDATED) EPS = 9.08\n(CONSOLIDATED) PROFIT/LOSS BEFORE TAXATION RS. IN MILLION 19,324.290\n(CONSOLIDATED) PROFIT/LOSS AFTER TAXATION RS. IN MILLION 11,583.090\n(CONSOLIDATED) EPS = 8.97\nBONUS = 10%\nBOOK CLOSURE FROM 11/09/2020\nBOOK CLOSURE TO 18/09/2020",
+        "financial_results": [
+            {
+                "result_type": "UNCONSOLIDATED",
+                "result_period": "HALF YEAR",
+                "period_ending": "2020-06-30",
+                "profit_before_tax_mln": "19391.266",
+                "profit_after_tax_mln": "11676.948",
+                "eps": "9.08"
+            },
+            {
+                "result_type": "CONSOLIDATED",
+                "result_period": "HALF YEAR",
+                "period_ending": "2020-06-30",
+                "profit_before_tax_mln": "19324.290",
+                "profit_after_tax_mln": "11583.090",
+                "eps": "8.97"
+            }
+        ],
+        "corporate_actions": {
+            "dividend": null,
+            "bonus": "10%",
+            "book_closure_start": "2020-09-11",
+            "book_closure_end": "2020-09-18",
+            "agm_date": null
+        }
+    },
+    {
+        "symbol": "MEBL",
+        "company_name": "Meezan Bank Limited",
+        "announcement_date": "2020-10-20",
+        "raw_text": "FINANCIAL RESULT FOR THE NINE MONTHS ENDED 30/09/2020\n(UNCONSOLIDATED) PROFIT/LOSS BEFORE TAXATION RS. IN MILLION 30,064.807\n(UNCONSOLIDATED) PROFIT/LOSS AFTER TAXATION RS. IN MILLION 18,078.755\n(UNCONSOLIDATED) EPS = 12.78\n(CONSOLIDATED) PROFIT/LOSS BEFORE TAXATION RS. IN MILLION 30,650.090\n(CONSOLIDATED) PROFIT/LOSS AFTER TAXATION RS. IN MILLION 18,460.220\n(CONSOLIDATED) EPS = 12.93\nDIVIDEND = 40%(i)\nBOOK CLOSURE TO 17/11/2020\nBOOK CLOSURE FROM 11/11/2020",
+        "financial_results": [
+            {
+                "result_type": "UNCONSOLIDATED",
+                "result_period": "NINE MONTHS",
+                "period_ending": "2020-09-30",
+                "profit_before_tax_mln": "30064.807",
+                "profit_after_tax_mln": "18078.755",
+                "eps": "12.78"
+            },
+            {
+                "result_type": "CONSOLIDATED",
+                "result_period": "NINE MONTHS",
+                "period_ending": "2020-09-30",
+                "profit_before_tax_mln": "30650.090",
+                "profit_after_tax_mln": "18460.220",
+                "eps": "12.93"
+            }
+        ],
+        "corporate_actions": {
+            "dividend": "40%(i)",
+            "bonus": null,
+            "book_closure_start": "2020-11-11",
+            "book_closure_end": "2020-11-17",
+            "agm_date": null
+        }
+    }
+]

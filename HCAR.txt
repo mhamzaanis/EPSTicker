@@ -1,0 +1,862 @@
+[
+    {
+        "symbol": "HCAR",
+        "company_name": "Honda Atlas Cars",
+        "announcement_date": "2015-01-27",
+        "raw_text": "FINANCIAL RESULT FOR THE NINE MONTHS ENDED 31/12/2014\nPROFIT/LOSS BEFORE TAXATION RS. IN MILLION 2,584.482\nPROFIT/LOSS AFTER TAXATION RS. IN MILLION 1,574.883\nEPS = 11.03",
+        "financial_results": [
+            {
+                "result_type": "UNCONSOLIDATED",
+                "result_period": "NINE MONTHS",
+                "period_ending": "2014-12-31",
+                "profit_before_tax_mln": "2584.482",
+                "profit_after_tax_mln": "1574.883",
+                "eps": "11.03"
+            }
+        ],
+        "corporate_actions": null
+    },
+    {
+        "symbol": "HCAR",
+        "company_name": "Honda Atlas Cars",
+        "announcement_date": "2015-05-14",
+        "raw_text": "FINANCIAL RESULT FOR THE YEAR ENDED 31/12/2015\nPROFIT/LOSS BEFORE TAXATION RS. IN MILLION 3,767.037\nPROFIT/LOSS AFTER TAXATION RS. IN MILLION 3,162.377\nEPS = 22.15\nDIVIDEND = 50%\nANNUAL GENERAL MEETING WILL BE HELD ON 26/06/2015\nBOOK CLOSURE FROM 17/06/2015\nBOOK CLOSURE TO 26/06/2015",
+        "financial_results": [
+            {
+                "result_type": "UNCONSOLIDATED",
+                "result_period": "YEAR",
+                "period_ending": "2015-12-31",
+                "profit_before_tax_mln": "3767.037",
+                "profit_after_tax_mln": "3162.377",
+                "eps": "22.15"
+            }
+        ],
+        "corporate_actions": {
+            "dividend": "50%",
+            "bonus": null,
+            "book_closure_start": "2015-06-17",
+            "book_closure_end": "2015-06-26",
+            "agm_date": "2015-06-26"
+        }
+    },
+    {
+        "symbol": "HCAR",
+        "company_name": "Honda Atlas Cars",
+        "announcement_date": "2015-07-28",
+        "raw_text": "FINANCIAL RESULT FOR THE FIRST QUARTER ENDED 30/06/2015\nPROFIT/LOSS BEFORE TAXATION RS. IN MILLION 1,618.369\nPROFIT/LOSS AFTER TAXATION RS. IN MILLION 1,085.162\nEPS = 7.60",
+        "financial_results": [
+            {
+                "result_type": "UNCONSOLIDATED",
+                "result_period": "FIRST QUARTER",
+                "period_ending": "2015-06-30",
+                "profit_before_tax_mln": "1618.369",
+                "profit_after_tax_mln": "1085.162",
+                "eps": "7.60"
+            }
+        ],
+        "corporate_actions": null
+    },
+    {
+        "symbol": "HCAR",
+        "company_name": "Honda Atlas Cars",
+        "announcement_date": "2015-11-20",
+        "raw_text": "FINANCIAL RESULT FOR THE HALF YEAR ENDED 30/06/2015\nPROFIT/LOSS BEFORE TAXATION RS. IN MILLION 2,695.302\nPROFIT/LOSS AFTER TAXATION RS. IN MILLION 1,811.243\nEPS = 12.68",
+        "financial_results": [
+            {
+                "result_type": "UNCONSOLIDATED",
+                "result_period": "HALF YEAR",
+                "period_ending": "2015-06-30",
+                "profit_before_tax_mln": "2695.302",
+                "profit_after_tax_mln": "1811.243",
+                "eps": "12.68"
+            }
+        ],
+        "corporate_actions": null
+    },
+    {
+        "symbol": "HCAR",
+        "company_name": "Honda Atlas Cars",
+        "announcement_date": "2016-01-22",
+        "raw_text": "FINANCIAL RESULT FOR THE NINE MONTHS ENDED 31/12/2015\nPROFIT/LOSS BEFORE TAXATION RS. IN MILLION 3,564.274\nPROFIT/LOSS AFTER TAXATION RS. IN MILLION 2,423.169\nEPS = 16.97",
+        "financial_results": [
+            {
+                "result_type": "UNCONSOLIDATED",
+                "result_period": "NINE MONTHS",
+                "period_ending": "2015-12-31",
+                "profit_before_tax_mln": "3564.274",
+                "profit_after_tax_mln": "2423.169",
+                "eps": "16.97"
+            }
+        ],
+        "corporate_actions": null
+    },
+    {
+        "symbol": "HCAR",
+        "company_name": "Honda Atlas Cars",
+        "announcement_date": "2016-05-17",
+        "raw_text": "FINANCIAL RESULT FOR THE YEAR ENDED 31/03/2016\nPROFIT/LOSS BEFORE TAXATION RS. IN MILLION 5,178.882\nPROFIT/LOSS AFTER TAXATION RS. IN MILLION 3,555.782\nEPS = 24.90\nDIVIDEND = 70%\nANNUAL GENERAL MEETING WILL BE HELD ON 19/07/2016\nBOOK CLOSURE FROM 09/07/2016\nBOOK CLOSURE TO 19/07/2016",
+        "financial_results": [
+            {
+                "result_type": "UNCONSOLIDATED",
+                "result_period": "YEAR",
+                "period_ending": "2016-03-31",
+                "profit_before_tax_mln": "5178.882",
+                "profit_after_tax_mln": "3555.782",
+                "eps": "24.90"
+            }
+        ],
+        "corporate_actions": {
+            "dividend": "70%",
+            "bonus": null,
+            "book_closure_start": "2016-07-09",
+            "book_closure_end": "2016-07-19",
+            "agm_date": "2016-07-19"
+        }
+    },
+    {
+        "symbol": "HCAR",
+        "company_name": "Honda Atlas Cars",
+        "announcement_date": "2016-07-26",
+        "raw_text": "FINANCIAL RESULT FOR THE FIRST QUARTER ENDED 30/06/2016\nPROFIT/LOSS BEFORE TAXATION RS. IN MILLION 1,412.881\nPROFIT/LOSS AFTER TAXATION RS. IN MILLION 1,050.748\nEPS = 7.36",
+        "financial_results": [
+            {
+                "result_type": "UNCONSOLIDATED",
+                "result_period": "FIRST QUARTER",
+                "period_ending": "2016-06-30",
+                "profit_before_tax_mln": "1412.881",
+                "profit_after_tax_mln": "1050.748",
+                "eps": "7.36"
+            }
+        ],
+        "corporate_actions": null
+    },
+    {
+        "symbol": "HCAR",
+        "company_name": "Honda Atlas Cars",
+        "announcement_date": "2016-11-15",
+        "raw_text": "FINANCIAL RESULT FOR THE HALF YEAR ENDED 30/09/2016\nPROFIT/LOSS BEFORE TAXATION RS. IN MILLION 3,704.361\nPROFIT/LOSS AFTER TAXATION RS. IN MILLION 2,523.742\nEPS = 17.67",
+        "financial_results": [
+            {
+                "result_type": "UNCONSOLIDATED",
+                "result_period": "HALF YEAR",
+                "period_ending": "2016-09-30",
+                "profit_before_tax_mln": "3704.361",
+                "profit_after_tax_mln": "2523.742",
+                "eps": "17.67"
+            }
+        ],
+        "corporate_actions": null
+    },
+    {
+        "symbol": "HCAR",
+        "company_name": "Honda Atlas Cars",
+        "announcement_date": "2017-01-26",
+        "raw_text": "FINANCIAL RESULT FOR THE NINE MONTHS ENDED 31/12/2016\nPROFIT/LOSS BEFORE TAXATION RS. IN MILLION 5,838.763\nPROFIT/LOSS AFTER TAXATION RS. IN MILLION 4,015.872\nEPS = 28.12",
+        "financial_results": [
+            {
+                "result_type": "UNCONSOLIDATED",
+                "result_period": "NINE MONTHS",
+                "period_ending": "2016-12-31",
+                "profit_before_tax_mln": "5838.763",
+                "profit_after_tax_mln": "4015.872",
+                "eps": "28.12"
+            }
+        ],
+        "corporate_actions": null
+    },
+    {
+        "symbol": "HCAR",
+        "company_name": "Honda Atlas Cars",
+        "announcement_date": "2017-05-30",
+        "raw_text": "FINANCIAL RESULT FOR THE YEAR ENDED 31/03/2017\nPROFIT/LOSS BEFORE TAXATION RS. IN MILLION 8,636.325\nPROFIT/LOSS AFTER TAXATION RS. IN MILLION 6,134.990\nEPS = 42.96\nDIVIDEND = 130%\nANNUAL GENERAL MEETING WILL BE HELD ON 23/06/2017\nBOOK CLOSURE FROM 15/06/2017\nBOOK CLOSURE TO 23/06/2017",
+        "financial_results": [
+            {
+                "result_type": "UNCONSOLIDATED",
+                "result_period": "YEAR",
+                "period_ending": "2017-03-31",
+                "profit_before_tax_mln": "8636.325",
+                "profit_after_tax_mln": "6134.990",
+                "eps": "42.96"
+            }
+        ],
+        "corporate_actions": {
+            "dividend": "130%",
+            "bonus": null,
+            "book_closure_start": "2017-06-15",
+            "book_closure_end": "2017-06-23",
+            "agm_date": "2017-06-23"
+        }
+    },
+    {
+        "symbol": "HCAR",
+        "company_name": "Honda Atlas Cars",
+        "announcement_date": "2017-07-25",
+        "raw_text": "FINANCIAL RESULT FOR THE FIRST QUARTER ENDED 30/06/2017\nPROFIT/LOSS BEFORE TAXATION RS. IN MILLION 2,914.464\nPROFIT/LOSS AFTER TAXATION RS. IN MILLION 2,086.271\nEPS = 14.61\nDIVIDEND = 41.8%\nBOOK CLOSURE FROM 09/08/2017\nBOOK CLOSURE TO 15/08/2017",
+        "financial_results": [
+            {
+                "result_type": "UNCONSOLIDATED",
+                "result_period": "FIRST QUARTER",
+                "period_ending": "2017-06-30",
+                "profit_before_tax_mln": "2914.464",
+                "profit_after_tax_mln": "2086.271",
+                "eps": "14.61"
+            }
+        ],
+        "corporate_actions": {
+            "dividend": "41.8%",
+            "bonus": null,
+            "book_closure_start": "2017-08-09",
+            "book_closure_end": "2017-08-15",
+            "agm_date": null
+        }
+    },
+    {
+        "symbol": "HCAR",
+        "company_name": "Honda Atlas Cars",
+        "announcement_date": "2017-11-22",
+        "raw_text": "FINANCIAL RESULT FOR THE HALF YEAR ENDED 30/09/2017\nPROFIT/LOSS BEFORE TAXATION RS. IN MILLION 5,507.396\nPROFIT/LOSS AFTER TAXATION RS. IN MILLION 3,704.038\nEPS = 25.94",
+        "financial_results": [
+            {
+                "result_type": "UNCONSOLIDATED",
+                "result_period": "HALF YEAR",
+                "period_ending": "2017-09-30",
+                "profit_before_tax_mln": "5507.396",
+                "profit_after_tax_mln": "3704.038",
+                "eps": "25.94"
+            }
+        ],
+        "corporate_actions": null
+    },
+    {
+        "symbol": "HCAR",
+        "company_name": "Honda Atlas Cars",
+        "announcement_date": "2018-01-23",
+        "raw_text": "FINANCIAL RESULT FOR THE NINE MONTHS ENDED 31/12/2017\nPROFIT/LOSS BEFORE TAXATION RS. IN MILLION 7,619.706\nPROFIT/LOSS AFTER TAXATION RS. IN MILLION 5,120.771\nEPS = 35.86",
+        "financial_results": [
+            {
+                "result_type": "UNCONSOLIDATED",
+                "result_period": "NINE MONTHS",
+                "period_ending": "2017-12-31",
+                "profit_before_tax_mln": "7619.706",
+                "profit_after_tax_mln": "5120.771",
+                "eps": "35.86"
+            }
+        ],
+        "corporate_actions": null
+    },
+    {
+        "symbol": "HCAR",
+        "company_name": "Honda Atlas Cars",
+        "announcement_date": "2018-05-15",
+        "raw_text": "FINANCIAL RESULT FOR THE YEAR ENDED 31/03/2018\nPROFIT/LOSS BEFORE TAXATION RS. IN MILLION 9,478.567\nPROFIT/LOSS AFTER TAXATION RS. IN MILLION 6,494.450\nEPS = 45.48\nDIVIDEND =227.50%\nANNUAL GENERAL MEETING WILL BE HELD ON 28/06/2018\nBOOK CLOSURE FROM 18/06/2018\nBOOK CLOSURE TO 28/06/2018",
+        "financial_results": [
+            {
+                "result_type": "UNCONSOLIDATED",
+                "result_period": "YEAR",
+                "period_ending": "2018-03-31",
+                "profit_before_tax_mln": "9478.567",
+                "profit_after_tax_mln": "6494.450",
+                "eps": "45.48"
+            }
+        ],
+        "corporate_actions": {
+            "dividend": "227.50%",
+            "bonus": null,
+            "book_closure_start": "2018-06-18",
+            "book_closure_end": "2018-06-28",
+            "agm_date": "2018-06-28"
+        }
+    },
+    {
+        "symbol": "HCAR",
+        "company_name": "Honda Atlas Cars",
+        "announcement_date": "2018-07-30",
+        "raw_text": "FINANCIAL RESULT FOR THE FIRST QUARTER ENDED 30/06/2018\nPROFIT/LOSS BEFORE TAXATION RS. IN MILLION 1,884.021\nPROFIT/LOSS AFTER TAXATION RS. IN MILLION 1,050.470\nEPS = 7.36",
+        "financial_results": [
+            {
+                "result_type": "UNCONSOLIDATED",
+                "result_period": "FIRST QUARTER",
+                "period_ending": "2018-06-30",
+                "profit_before_tax_mln": "1884.021",
+                "profit_after_tax_mln": "1050.470",
+                "eps": "7.36"
+            }
+        ],
+        "corporate_actions": null
+    },
+    {
+        "symbol": "HCAR",
+        "company_name": "Honda Atlas Cars",
+        "announcement_date": "2018-11-13",
+        "raw_text": "FINANCIAL RESULT FOR THE HALF YEAR ENDED 30/09/2018\nPROFIT/LOSS BEFORE TAXATION RS. IN MILLION 3,245.999\nPROFIT/LOSS AFTER TAXATION RS. IN MILLION 2,080.788\nEPS = 14.57",
+        "financial_results": [
+            {
+                "result_type": "UNCONSOLIDATED",
+                "result_period": "HALF YEAR",
+                "period_ending": "2018-09-30",
+                "profit_before_tax_mln": "3245.999",
+                "profit_after_tax_mln": "2080.788",
+                "eps": "14.57"
+            }
+        ],
+        "corporate_actions": null
+    },
+    {
+        "symbol": "HCAR",
+        "company_name": "Honda Atlas Cars",
+        "announcement_date": "2019-01-24",
+        "raw_text": "FINANCIAL RESULT FOR THE NINE MONTHS ENDED 31/12/2018\nPROFIT/LOSS BEFORE TAXATION RS. IN MILLION 4,113.804\nPROFIT/LOSS AFTER TAXATION RS. IN MILLION 2,682.383\nEPS = 18.78",
+        "financial_results": [
+            {
+                "result_type": "UNCONSOLIDATED",
+                "result_period": "NINE MONTHS",
+                "period_ending": "2018-12-31",
+                "profit_before_tax_mln": "4113.804",
+                "profit_after_tax_mln": "2682.383",
+                "eps": "18.78"
+            }
+        ],
+        "corporate_actions": null
+    },
+    {
+        "symbol": "HCAR",
+        "company_name": "Honda Atlas Cars",
+        "announcement_date": "2019-05-20",
+        "raw_text": "FINANCIAL RESULT FOR THE YEAR ENDED 31/03/2019\nPROFIT/LOSS BEFORE TAXATION RS. IN MILLION 5,593.573\nPROFIT/LOSS AFTER TAXATION RS. IN MILLION 3,851.113\nEPS = 26.97\nDIVIDEND = 121.50%\nANNUAL GENERAL MEETING WILL BE HELD ON 27/06/2019\nBOOK CLOSURE FROM 17/06/2019\nBOOK CLOSURE TO 27/06/2019",
+        "financial_results": [
+            {
+                "result_type": "UNCONSOLIDATED",
+                "result_period": "YEAR",
+                "period_ending": "2019-03-31",
+                "profit_before_tax_mln": "5593.573",
+                "profit_after_tax_mln": "3851.113",
+                "eps": "26.97"
+            }
+        ],
+        "corporate_actions": {
+            "dividend": "121.50%",
+            "bonus": null,
+            "book_closure_start": "2019-06-17",
+            "book_closure_end": "2019-06-27",
+            "agm_date": "2019-06-27"
+        }
+    },
+    {
+        "symbol": "HCAR",
+        "company_name": "Honda Atlas Cars",
+        "announcement_date": "2019-07-23",
+        "raw_text": "FINANCIAL RESULT FOR THE FIRST QUARTER ENDED 30/06/2019\nPROFIT/LOSS BEFORE TAXATION RS. IN MILLION 356.194\nPROFIT/LOSS AFTER TAXATION RS. IN MILLION 241.716\nEPS = 1.69",
+        "financial_results": [
+            {
+                "result_type": "UNCONSOLIDATED",
+                "result_period": "FIRST QUARTER",
+                "period_ending": "2019-06-30",
+                "profit_before_tax_mln": "356.194",
+                "profit_after_tax_mln": "241.716",
+                "eps": "1.69"
+            }
+        ],
+        "corporate_actions": null
+    },
+    {
+        "symbol": "HCAR",
+        "company_name": "Honda Atlas Cars",
+        "announcement_date": "2019-11-14",
+        "raw_text": "FINANCIAL RESULT FOR THE HALF YEAR ENDED 30/09/2019\nPROFIT/LOSS BEFORE TAXATION RS. IN MILLION 1,102.745\nPROFIT/LOSS AFTER TAXATION RS. IN MILLION 751.412\nEPS = 5.26",
+        "financial_results": [
+            {
+                "result_type": "UNCONSOLIDATED",
+                "result_period": "HALF YEAR",
+                "period_ending": "2019-09-30",
+                "profit_before_tax_mln": "1102.745",
+                "profit_after_tax_mln": "751.412",
+                "eps": "5.26"
+            }
+        ],
+        "corporate_actions": null
+    },
+    {
+        "symbol": "HCAR",
+        "company_name": "Honda Atlas Cars",
+        "announcement_date": "2020-01-23",
+        "raw_text": "FINANCIAL RESULT FOR THE NINE MONTHS ENDED 31/12/2019\nPROFIT/LOSS BEFORE TAXATION RS. IN MILLION 1,049.891\nPROFIT/LOSS AFTER TAXATION RS. IN MILLION 710.158\nEPS = 4.97",
+        "financial_results": [
+            {
+                "result_type": "UNCONSOLIDATED",
+                "result_period": "NINE MONTHS",
+                "period_ending": "2019-12-31",
+                "profit_before_tax_mln": "1049.891",
+                "profit_after_tax_mln": "710.158",
+                "eps": "4.97"
+            }
+        ],
+        "corporate_actions": null
+    },
+    {
+        "symbol": "HCAR",
+        "company_name": "Honda Atlas Cars",
+        "announcement_date": "2020-06-02",
+        "raw_text": "FINANCIAL RESULT FOR THE YEAR ENDED 31/03/2020\nPROFIT/LOSS BEFORE TAXATION RS. IN MILLION 1,547.200\nPROFIT/LOSS AFTER TAXATION RS. IN MILLION 681.752\nEPS = 4.77\nDIVIDEND = 10%(F)\nANNUAL GENERAL MEETING WILL BE HELD ON 14/07/2020\nBOOK CLOSURE FROM 06/07/2020\nBOOK CLOSURE TO 14/07/2020",
+        "financial_results": [
+            {
+                "result_type": "UNCONSOLIDATED",
+                "result_period": "YEAR",
+                "period_ending": "2020-03-31",
+                "profit_before_tax_mln": "1547.200",
+                "profit_after_tax_mln": "681.752",
+                "eps": "4.77"
+            }
+        ],
+        "corporate_actions": {
+            "dividend": "10%(F)",
+            "bonus": null,
+            "book_closure_start": "2020-07-06",
+            "book_closure_end": "2020-07-14",
+            "agm_date": "2020-07-14"
+        }
+    },
+    {
+        "symbol": "HCAR",
+        "company_name": "Honda Atlas Cars",
+        "announcement_date": "2020-07-24",
+        "raw_text": "FINANCIAL RESULT FOR THE FIRST QUARTER ENDED 30/06/2020\nPROFIT/LOSS BEFORE TAXATION RS. IN MILLION (398.466)\nPROFIT/LOSS AFTER TAXATION RS. IN MILLION (511.028)\nEPS = (3.58)",
+        "financial_results": [
+            {
+                "result_type": "UNCONSOLIDATED",
+                "result_period": "FIRST QUARTER",
+                "period_ending": "2020-06-30",
+                "profit_before_tax_mln": "-398.466",
+                "profit_after_tax_mln": "-511.028",
+                "eps": "(3.58)"
+            }
+        ],
+        "corporate_actions": null
+    },
+    {
+        "symbol": "HCAR",
+        "company_name": "Honda Atlas Cars",
+        "announcement_date": "2020-11-18",
+        "raw_text": "FINANCIAL RESULT FOR THE HALF YEAR ENDED 30/09/2020\nPROFIT/LOSS BEFORE TAXATION RS. IN MILLION 673.371\nPROFIT/LOSS AFTER TAXATION RS. IN MILLION 145.852\nEPS = 1.02",
+        "financial_results": [
+            {
+                "result_type": "UNCONSOLIDATED",
+                "result_period": "HALF YEAR",
+                "period_ending": "2020-09-30",
+                "profit_before_tax_mln": "673.371",
+                "profit_after_tax_mln": "145.852",
+                "eps": "1.02"
+            }
+        ],
+        "corporate_actions": null
+    },
+    {
+        "symbol": "HCAR",
+        "company_name": "Honda Atlas Cars",
+        "announcement_date": "2021-01-27",
+        "raw_text": "PROFIT/LOSS BEFORE TAXATION RS. IN MILLION 1,747.366\nFINANCIAL RESULT FOR THE NINE MONTHS ENDED 31/12/2020\nEPS = 6.29\nPROFIT/LOSS AFTER TAXATION RS. IN MILLION 897.654",
+        "financial_results": [
+            {
+                "result_type": "UNCONSOLIDATED",
+                "result_period": "NINE MONTHS",
+                "period_ending": "2020-12-31",
+                "profit_before_tax_mln": "1747.366",
+                "profit_after_tax_mln": "897.654",
+                "eps": "6.29"
+            }
+        ],
+        "corporate_actions": null
+    },
+    {
+        "symbol": "HCAR",
+        "company_name": "Honda Atlas Cars",
+        "announcement_date": "2021-05-25",
+        "raw_text": "FINANCIAL RESULT FOR THE YEAR ENDED 31/03/2021\nDIVIDEND = 45.2%(F)\nPROFIT/LOSS BEFORE TAXATION RS. IN MILLION 2,780.627\nPROFIT/LOSS AFTER TAXATION RS. IN MILLION 1,793.205\nEPS = 12.56\nANNUAL GENERAL MEETING WILL BE HELD ON 29/06/2021\nBOOK CLOSURE FROM 18/06/2021\nBOOK CLOSURE TO 29/06/2021",
+        "financial_results": [
+            {
+                "result_type": "UNCONSOLIDATED",
+                "result_period": "YEAR",
+                "period_ending": "2021-03-31",
+                "profit_before_tax_mln": "2780.627",
+                "profit_after_tax_mln": "1793.205",
+                "eps": "12.56"
+            }
+        ],
+        "corporate_actions": {
+            "dividend": "45.2%(F)",
+            "bonus": null,
+            "book_closure_start": "2021-06-18",
+            "book_closure_end": "2021-06-29",
+            "agm_date": "2021-06-29"
+        }
+    },
+    {
+        "symbol": "HCAR",
+        "company_name": "Honda Atlas Cars",
+        "announcement_date": "2021-07-29",
+        "raw_text": "FINANCIAL RESULT FOR THE FIRST QUARTER ENDED 30/06/2021\nPROFIT/LOSS BEFORE TAXATION RS. IN MILLION 1,363.539\nPROFIT/LOSS AFTER TAXATION RS. IN MILLION 928.224\nEPS = 6.50",
+        "financial_results": [
+            {
+                "result_type": "UNCONSOLIDATED",
+                "result_period": "FIRST QUARTER",
+                "period_ending": "2021-06-30",
+                "profit_before_tax_mln": "1363.539",
+                "profit_after_tax_mln": "928.224",
+                "eps": "6.50"
+            }
+        ],
+        "corporate_actions": null
+    },
+    {
+        "symbol": "HCAR",
+        "company_name": "Honda Atlas Cars",
+        "announcement_date": "2021-11-17",
+        "raw_text": "FINANCIAL RESULT FOR THE HALF YEAR ENDED 30/09/2021\nPROFIT/LOSS BEFORE TAXATION RS. IN MILLION 2,811.068\nPROFIT/LOSS AFTER TAXATION RS. IN MILLION 1,867.429\nEPS = 13.08",
+        "financial_results": [
+            {
+                "result_type": "UNCONSOLIDATED",
+                "result_period": "HALF YEAR",
+                "period_ending": "2021-09-30",
+                "profit_before_tax_mln": "2811.068",
+                "profit_after_tax_mln": "1867.429",
+                "eps": "13.08"
+            }
+        ],
+        "corporate_actions": null
+    },
+    {
+        "symbol": "HCAR",
+        "company_name": "Honda Atlas Cars",
+        "announcement_date": "2022-01-25",
+        "raw_text": "FINANCIAL RESULT FOR THE NINE MONTHS ENDED 31/12/2021\nPROFIT/LOSS BEFORE TAXATION RS. IN MILLION 3,453.053\nPROFIT/LOSS AFTER TAXATION RS. IN MILLION 2,313.374\nEPS = 16.20",
+        "financial_results": [
+            {
+                "result_type": "UNCONSOLIDATED",
+                "result_period": "NINE MONTHS",
+                "period_ending": "2021-12-31",
+                "profit_before_tax_mln": "3453.053",
+                "profit_after_tax_mln": "2313.374",
+                "eps": "16.20"
+            }
+        ],
+        "corporate_actions": null
+    },
+    {
+        "symbol": "HCAR",
+        "company_name": "Honda Atlas Cars",
+        "announcement_date": "2022-05-26",
+        "raw_text": "FINANCIAL RESULT FOR THE YEAR ENDED 31/03/2022\nDIVIDEND = 70%(F)\nPROFIT/LOSS BEFORE TAXATION RS. IN MILLION 4,275.405\nPROFIT/LOSS AFTER TAXATION RS. IN MILLION 2,509.906\nEPS = 17.58\nANNUAL GENERAL MEETING HELD ON 29/06/2022\nBOOK CLOSURE FROM 15/06/2022\nBOOK CLOSURE TO 29/06/2022",
+        "financial_results": [
+            {
+                "result_type": "UNCONSOLIDATED",
+                "result_period": "YEAR",
+                "period_ending": "2022-03-31",
+                "profit_before_tax_mln": "4275.405",
+                "profit_after_tax_mln": "2509.906",
+                "eps": "17.58"
+            }
+        ],
+        "corporate_actions": {
+            "dividend": "70%(F)",
+            "bonus": null,
+            "book_closure_start": "2022-06-15",
+            "book_closure_end": "2022-06-29",
+            "agm_date": "2022-06-29"
+        }
+    },
+    {
+        "symbol": "HCAR",
+        "company_name": "Honda Atlas Cars",
+        "announcement_date": "2022-07-26",
+        "raw_text": "PROFIT/LOSS BEFORE TAXATION RS. IN MILLION 1,094.239\nPROFIT/LOSS AFTER TAXATION RS. IN MILLION 658.202\nEPS = 4.61\nFINANCIAL RESULT FOR THE FIRST QUARTER ENDED 30/06/2022",
+        "financial_results": [
+            {
+                "result_type": "UNCONSOLIDATED",
+                "result_period": "FIRST QUARTER",
+                "period_ending": "2022-06-30",
+                "profit_before_tax_mln": "1094.239",
+                "profit_after_tax_mln": "658.202",
+                "eps": "4.61"
+            }
+        ],
+        "corporate_actions": null
+    },
+    {
+        "symbol": "HCAR",
+        "company_name": "Honda Atlas Cars",
+        "announcement_date": "2022-11-16",
+        "raw_text": "PROFIT/LOSS AFTER TAXATION RS. IN MILLION (385.289)\nEPS = (2.70)\nFINANCIAL RESULT FOR THE HALF YEAR ENDED 30/06/2022\nPROFIT/LOSS BEFORE TAXATION RS. IN MILLION (159.034)",
+        "financial_results": [
+            {
+                "result_type": "UNCONSOLIDATED",
+                "result_period": "HALF YEAR",
+                "period_ending": "2022-06-30",
+                "profit_before_tax_mln": "-159.034",
+                "profit_after_tax_mln": "-385.289",
+                "eps": "(2.70)"
+            }
+        ],
+        "corporate_actions": null
+    },
+    {
+        "symbol": "HCAR",
+        "company_name": "Honda Atlas Cars",
+        "announcement_date": "2023-01-26",
+        "raw_text": "FINANCIAL RESULT FOR THE NINE MONTHS ENDED 31/12/2022\nPROFIT/LOSS BEFORE TAXATION RS. IN MILLION 2,433.434\nPROFIT/LOSS AFTER TAXATION RS. IN MILLION 1,083.738\nEPS = 7.59",
+        "financial_results": [
+            {
+                "result_type": "UNCONSOLIDATED",
+                "result_period": "NINE MONTHS",
+                "period_ending": "2022-12-31",
+                "profit_before_tax_mln": "2433.434",
+                "profit_after_tax_mln": "1083.738",
+                "eps": "7.59"
+            }
+        ],
+        "corporate_actions": null
+    },
+    {
+        "symbol": "HCAR",
+        "company_name": "Honda Atlas Cars",
+        "announcement_date": "2023-05-26",
+        "raw_text": "FINANCIAL RESULT FOR THE YEAR ENDED 31/03/2023\nPROFIT/LOSS BEFORE TAXATION RS. IN MILLION 1,982.648\nPROFIT/LOSS AFTER TAXATION RS. IN MILLION 260.141\nEPS = 1.82\nBOOK CLOSURE FROM 12/06/2023\nBOOK CLOSURE TO 23/06/2023",
+        "financial_results": [
+            {
+                "result_type": "UNCONSOLIDATED",
+                "result_period": "YEAR",
+                "period_ending": "2023-03-31",
+                "profit_before_tax_mln": "1982.648",
+                "profit_after_tax_mln": "260.141",
+                "eps": "1.82"
+            }
+        ],
+        "corporate_actions": {
+            "dividend": null,
+            "bonus": null,
+            "book_closure_start": "2023-06-12",
+            "book_closure_end": "2023-06-23",
+            "agm_date": null
+        }
+    },
+    {
+        "symbol": "HCAR",
+        "company_name": "Honda Atlas Cars",
+        "announcement_date": "2023-07-25",
+        "raw_text": "FINANCIAL RESULT FOR THE FIRST QUARTER ENDED 30/06/2023\nPROFIT/LOSS BEFORE TAXATION RS. IN MILLION 267.695\nPROFIT/LOSS AFTER TAXATION RS. IN MILLION 144.957\nEPS = 1.02",
+        "financial_results": [
+            {
+                "result_type": "UNCONSOLIDATED",
+                "result_period": "FIRST QUARTER",
+                "period_ending": "2023-06-30",
+                "profit_before_tax_mln": "267.695",
+                "profit_after_tax_mln": "144.957",
+                "eps": "1.02"
+            }
+        ],
+        "corporate_actions": null
+    },
+    {
+        "symbol": "HCAR",
+        "company_name": "Honda Atlas Cars",
+        "announcement_date": "2023-11-22",
+        "raw_text": "FINANCIAL RESULT FOR THE HALF YEAR ENDED 30/09/2023\nPROFIT/LOSS BEFORE TAXATION RS. IN MILLION 1,772.673\nPROFIT/LOSS AFTER TAXATION RS. IN MILLION 820.293\nEPS = 5.74",
+        "financial_results": [
+            {
+                "result_type": "UNCONSOLIDATED",
+                "result_period": "HALF YEAR",
+                "period_ending": "2023-09-30",
+                "profit_before_tax_mln": "1772.673",
+                "profit_after_tax_mln": "820.293",
+                "eps": "5.74"
+            }
+        ],
+        "corporate_actions": null
+    },
+    {
+        "symbol": "HCAR",
+        "company_name": "Honda Atlas Cars",
+        "announcement_date": "2024-01-24",
+        "raw_text": "FINANCIAL RESULT FOR THE NINE MONTHS ENDED 31/12/2023\nPROFIT/LOSS BEFORE TAXATION RS. IN MILLION 2,000.060\nPROFIT/LOSS AFTER TAXATION RS. IN MILLION 963.544\nEPS = 6.75",
+        "financial_results": [
+            {
+                "result_type": "UNCONSOLIDATED",
+                "result_period": "NINE MONTHS",
+                "period_ending": "2023-12-31",
+                "profit_before_tax_mln": "2000.060",
+                "profit_after_tax_mln": "963.544",
+                "eps": "6.75"
+            }
+        ],
+        "corporate_actions": null
+    },
+    {
+        "symbol": "HCAR",
+        "company_name": "Honda Atlas Cars",
+        "announcement_date": "2024-05-27",
+        "raw_text": "FINANCIAL RESULT FOR THE YEAR ENDED 31/03/2024\nPROFIT/LOSS BEFORE TAXATION RS. IN MILLION 2,752.743\nPROFIT/LOSS AFTER TAXATION RS. IN MILLION 2,333.895\nEPS = 16.34\nDIVIDEND = 65%(F)\nANNUAL GENERAL MEETING WILL BE HELD ON 27/06/2024\nBOOK CLOSURE FROM 17/06/2024\nBOOK CLOSURE TO 27/06/2024",
+        "financial_results": [
+            {
+                "result_type": "UNCONSOLIDATED",
+                "result_period": "YEAR",
+                "period_ending": "2024-03-31",
+                "profit_before_tax_mln": "2752.743",
+                "profit_after_tax_mln": "2333.895",
+                "eps": "16.34"
+            }
+        ],
+        "corporate_actions": {
+            "dividend": "65%(F)",
+            "bonus": null,
+            "book_closure_start": "2024-06-17",
+            "book_closure_end": "2024-06-27",
+            "agm_date": "2024-06-27"
+        }
+    },
+    {
+        "symbol": "HCAR",
+        "company_name": "Honda Atlas Cars",
+        "announcement_date": "2024-07-24",
+        "raw_text": "FINANCIAL RESULT FOR THE FIRST QUARTER ENDED 30/06/2024\nPROFIT/LOSS BEFORE TAXATION RS. IN MILLION 383.316\nPROFIT/LOSS AFTER TAXATION RS. IN MILLION 202.625\nEPS = 1.42",
+        "financial_results": [
+            {
+                "result_type": "UNCONSOLIDATED",
+                "result_period": "FIRST QUARTER",
+                "period_ending": "2024-06-30",
+                "profit_before_tax_mln": "383.316",
+                "profit_after_tax_mln": "202.625",
+                "eps": "1.42"
+            }
+        ],
+        "corporate_actions": null
+    },
+    {
+        "symbol": "HCAR",
+        "company_name": "Honda Atlas Cars",
+        "announcement_date": "2024-11-22",
+        "raw_text": "FINANCIAL RESULT FOR THE HALF YEAR ENDED 30/09/2024\nPROFIT/LOSS BEFORE TAXATION RS. IN MILLION 690.617\nPROFIT/LOSS AFTER TAXATION RS. IN MILLION 460.364\nEPS = 3.22",
+        "financial_results": [
+            {
+                "result_type": "UNCONSOLIDATED",
+                "result_period": "HALF YEAR",
+                "period_ending": "2024-09-30",
+                "profit_before_tax_mln": "690.617",
+                "profit_after_tax_mln": "460.364",
+                "eps": "3.22"
+            }
+        ],
+        "corporate_actions": null
+    },
+    {
+        "symbol": "HCAR",
+        "company_name": "Honda Atlas Cars",
+        "announcement_date": "2025-01-22",
+        "raw_text": "FINANCIAL RESULT FOR THE NINE MONTHS ENDED 31/12/2024\nPROFIT/LOSS BEFORE TAXATION RS. IN MILLION 1,795.904\nPROFIT/LOSS AFTER TAXATION RS. IN MILLION 1,026.767\nEPS = 7.19",
+        "financial_results": [
+            {
+                "result_type": "UNCONSOLIDATED",
+                "result_period": "NINE MONTHS",
+                "period_ending": "2024-12-31",
+                "profit_before_tax_mln": "1795.904",
+                "profit_after_tax_mln": "1026.767",
+                "eps": "7.19"
+            }
+        ],
+        "corporate_actions": null
+    },
+    {
+        "symbol": "HCAR",
+        "company_name": "Honda Atlas Cars",
+        "announcement_date": "2025-05-22",
+        "raw_text": "FINANCIAL RESULT FOR THE YEAR ENDED 31/03/2025\nPROFIT/LOSS BEFORE TAXATION RS. IN MILLION 3,274.773\nPROFIT/LOSS AFTER TAXATION RS. IN MILLION 2,709.141\nEPS = 18.97\nDIVIDEND = 80%(F)\nBOOK CLOSURE FROM 12/06/2025\nBOOK CLOSURE TO 24/06/2025",
+        "financial_results": [
+            {
+                "result_type": "UNCONSOLIDATED",
+                "result_period": "YEAR",
+                "period_ending": "2025-03-31",
+                "profit_before_tax_mln": "3274.773",
+                "profit_after_tax_mln": "2709.141",
+                "eps": "18.97"
+            }
+        ],
+        "corporate_actions": {
+            "dividend": "80%(F)",
+            "bonus": null,
+            "book_closure_start": "2025-06-12",
+            "book_closure_end": "2025-06-24",
+            "agm_date": null
+        }
+    },
+    {
+        "symbol": "HCAR",
+        "company_name": "Honda Atlas Cars",
+        "announcement_date": "2025-07-24",
+        "raw_text": "FINANCIAL RESULT FOR THE FIRST QUARTER ENDED 30/06/2025\nPROFIT/LOSS BEFORE TAXATION RS. IN MILLION 1,460.833\nPROFIT/LOSS AFTER TAXATION RS. IN MILLION 829.439\nEPS = 5.80",
+        "financial_results": [
+            {
+                "result_type": "UNCONSOLIDATED",
+                "result_period": "FIRST QUARTER",
+                "period_ending": "2025-06-30",
+                "profit_before_tax_mln": "1460.833",
+                "profit_after_tax_mln": "829.439",
+                "eps": "5.80"
+            }
+        ],
+        "corporate_actions": null
+    },
+    {
+        "symbol": "HCAR",
+        "company_name": "Honda Atlas Cars",
+        "announcement_date": "2025-11-20",
+        "raw_text": "FINANCIAL RESULT FOR THE HALF YEAR ENDED 30/09/2025\nPROFIT/LOSS BEFORE TAXATION RS. IN MILLION 2,583.038\nPROFIT/LOSS AFTER TAXATION RS. IN MILLION 1,570.614\nEPS = 11.00",
+        "financial_results": [
+            {
+                "result_type": "UNCONSOLIDATED",
+                "result_period": "HALF YEAR",
+                "period_ending": "2025-09-30",
+                "profit_before_tax_mln": "2583.038",
+                "profit_after_tax_mln": "1570.614",
+                "eps": "11.00"
+            }
+        ],
+        "corporate_actions": null
+    },
+    {
+        "symbol": "HCAR",
+        "company_name": "Honda Atlas Cars",
+        "announcement_date": "2026-01-29",
+        "raw_text": "FINANCIAL RESULT FOR THE NINE MONTHS ENDED 31/12/2025\nPROFIT/LOSS BEFORE TAXATION RS. IN MILLION 3,785.734\nPROFIT/LOSS AFTER TAXATION RS. IN MILLION 2,226.082\nEPS = 15.59",
+        "financial_results": [
+            {
+                "result_type": "UNCONSOLIDATED",
+                "result_period": "NINE MONTHS",
+                "period_ending": "2025-12-31",
+                "profit_before_tax_mln": "3785.734",
+                "profit_after_tax_mln": "2226.082",
+                "eps": "15.59"
+            }
+        ],
+        "corporate_actions": null
+    },
+    {
+        "symbol": "HCAR",
+        "company_name": "Honda Atlas Cars",
+        "announcement_date": "2026-05-19",
+        "raw_text": "FINANCIAL RESULT FOR THE YEAR ENDED 31/03/2026\nPROFIT/LOSS BEFORE TAXATION RS. IN MILLION 5,088.232\nPROFIT/LOSS AFTER TAXATION RS. IN MILLION 3,233.703\nEPS = 22.40\nDIVIDEND = 90%(F)\nANNUAL GENERAL MEETING WILL BE HELD ON 29/06/2026\nBOOK CLOSURE FROM 16/06/2026\nBOOK CLOSURE TO 29/06/2026",
+        "financial_results": [
+            {
+                "result_type": "UNCONSOLIDATED",
+                "result_period": "YEAR",
+                "period_ending": "2026-03-31",
+                "profit_before_tax_mln": "5088.232",
+                "profit_after_tax_mln": "3233.703",
+                "eps": "22.40"
+            }
+        ],
+        "corporate_actions": {
+            "dividend": "90%(F)",
+            "bonus": null,
+            "book_closure_start": "2026-06-16",
+            "book_closure_end": "2026-06-29",
+            "agm_date": "2026-06-29"
+        }
+    }
+]
