@@ -22,8 +22,7 @@ import json
 import re
 import requests
 from bs4 import BeautifulSoup
-from datetime import date
-import time
+from datetime import date, timedelta
 
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -332,6 +331,17 @@ def supabase_upsert(base_url, table, payload, headers, on_conflict=None):
     return resp.json()
 
 
+def _to_numeric(val):
+    """Convert parsed string values to float, or None if empty/unparseable.
+    Prevents Postgres 22P02 'invalid input syntax for type numeric' errors."""
+    if val is None or str(val).strip() == "":
+        return None
+    try:
+        return float(val)
+    except (ValueError, TypeError):
+        return None
+
+
 def upsert_records(records):
     base_url = os.environ.get("SUPABASE_URL", "").rstrip("/")
     if not base_url:
@@ -358,9 +368,9 @@ def upsert_records(records):
                 "result_type":            fr["result_type"],
                 "result_period":          fr["result_period"],
                 "period_ending":          fr["period_ending"],
-                "profit_before_tax_mln":  fr["profit_before_tax_mln"],
-                "profit_after_tax_mln":   fr["profit_after_tax_mln"],
-                "eps":                    fr["eps"],
+                "profit_before_tax_mln":  _to_numeric(fr["profit_before_tax_mln"]),
+                "profit_after_tax_mln":   _to_numeric(fr["profit_after_tax_mln"]),
+                "eps":                    _to_numeric(fr["eps"]),
             }
             supabase_upsert(base_url, "financial_results", [fr_payload], headers, on_conflict="announcement_id,result_type")
 
@@ -421,7 +431,6 @@ def run_backfill(upsert=False):
             upsert_records(records)
         elif records:
             print(json.dumps(records, indent=2))
-            time.sleep(2)
 
 
 # ─────────────────────────────────────────────────────────────────────────────
