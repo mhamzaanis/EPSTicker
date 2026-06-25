@@ -1,0 +1,87 @@
+name: KSE Announcements Sync
+
+on:
+  # ── Daily run: scrapes yesterday → today for all symbols ──────────────────
+  schedule:
+    - cron: "30 2 * * *"   # 07:30 PKT (UTC+5) — well after PSX close
+
+  # ── Manual trigger: set backfill=true to re-run from 2018 ─────────────────
+  workflow_dispatch:
+    inputs:
+      backfill:
+        description: "Run full backfill from 2018? (true/false)"
+        required: false
+        default: "false"
+      symbol:
+        description: "Single symbol to scrape (leave empty for all)"
+        required: false
+        default: ""
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install requests beautifulsoup4
+
+      # ── Full backfill (manual trigger only) ─────────────────────────────
+      - name: Full backfill
+        if: github.event_name == 'workflow_dispatch' && github.event.inputs.backfill == 'true'
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
+        run: |
+          python EPSTicker.py --backfill --upsert
+
+      # ── Daily incremental: yesterday → today ─────────────────────────────
+      - name: Daily sync (all symbols)
+        if: |
+          github.event_name == 'schedule' ||
+          (github.event_name == 'workflow_dispatch' &&
+           github.event.inputs.backfill != 'true' &&
+           github.event.inputs.symbol == '')
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
+        run: |
+          START=$(date -d "yesterday" +%Y-%m-%d)
+          END=$(date +%Y-%m-%d)
+          echo "Syncing $START → $END for all symbols"
+          python - <<'EOF'
+          import subprocess, sys
+          from kse_scraper import BACKFILL_SYMBOLS
+          import datetime
+
+          start = (datetime.date.today() - datetime.timedelta(days=1)).isoformat()
+          end   = datetime.date.today().isoformat()
+          for sym in BACKFILL_SYMBOLS:
+              subprocess.run(
+                  [sys.executable, "kse_scraper.py", sym, start, end, "--upsert"],
+                  check=True
+              )
+          EOF
+
+      # ── Single symbol (manual trigger with symbol set) ───────────────────
+      - name: Single symbol sync
+        if: |
+          github.event_name == 'workflow_dispatch' &&
+          github.event.inputs.symbol != '' &&
+          github.event.inputs.backfill != 'true'
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
+        run: |
+          START=$(date -d "2018-01-01" +%Y-%m-%d)
+          END=$(date +%Y-%m-%d)
+          python kse_scraper.py ${{ github.event.inputs.symbol }} $START $END --upsert
