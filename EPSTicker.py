@@ -22,7 +22,8 @@ import json
 import re
 import requests
 from bs4 import BeautifulSoup
-from datetime import date, timedelta
+from datetime import date
+import time
 
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -381,18 +382,38 @@ def upsert_records(records):
 # Backfill helpers
 # ─────────────────────────────────────────────────────────────────────────────
 
-# Add / remove symbols here; GitHub Actions will iterate over all of them.
-BACKFILL_SYMBOLS = [
-    "SYM", "HCAR", "ILP",
-    # … extend as needed
-]
-
 BACKFILL_START = "2018-01-01"
+
+
+def fetch_symbols_from_db():
+    """Pull unique symbols from Supabase via the same RPC your frontend uses."""
+    base_url = os.environ.get("SUPABASE_URL", "").rstrip("/")
+    key = os.environ.get("SUPABASE_KEY")
+    if not base_url or not key:
+        raise RuntimeError("SUPABASE_URL and SUPABASE_KEY must be set")
+
+    resp = requests.post(
+        f"{base_url}/rest/v1/rpc/get_unique_symbols",
+        headers={
+            "apikey": key,
+            "Authorization": f"Bearer {key}",
+            "Content-Type": "application/json",
+        },
+        json={},
+    )
+    if not resp.ok:
+        raise RuntimeError(f"get_unique_symbols RPC failed: {resp.status_code} {resp.text}")
+
+    rows = resp.json()
+    symbols = sorted({row["symbol"].strip().upper() for row in rows if row.get("symbol")})
+    print(f"  Fetched {len(symbols)} unique symbols from DB")
+    return symbols
 
 
 def run_backfill(upsert=False):
     end_date = date.today().strftime("%Y-%m-%d")
-    for symbol in BACKFILL_SYMBOLS:
+    symbols = fetch_symbols_from_db()
+    for symbol in symbols:
         print(f"\n{'─'*50}\nBackfilling {symbol}  {BACKFILL_START} → {end_date}")
         records = scrape_ksestocks_announcements(symbol, BACKFILL_START, end_date)
         print(f"  Found {len(records)} announcement(s)")
@@ -400,6 +421,7 @@ def run_backfill(upsert=False):
             upsert_records(records)
         elif records:
             print(json.dumps(records, indent=2))
+            time.sleep(2)
 
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -416,7 +438,7 @@ if __name__ == "__main__":
     parser.add_argument("--upsert", action="store_true",
                         help="Write results to Supabase (requires env vars)")
     parser.add_argument("--backfill", action="store_true",
-                        help="Run full backfill for all symbols in BACKFILL_SYMBOLS")
+                        help="Run full backfill for all symbols fetched from DB")
 
     args = parser.parse_args()
 
