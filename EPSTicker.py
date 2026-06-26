@@ -23,6 +23,7 @@ import re
 import requests
 from bs4 import BeautifulSoup
 from datetime import date, timedelta
+import time
 
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -343,49 +344,79 @@ def _to_numeric(val):
 
 
 def upsert_records(records):
+    """
+    Bulk upsert: 3 HTTP requests total per symbol regardless of announcement count.
+      1. Batch upsert all parent announcements → get back ids
+      2. Batch upsert all financial_results rows
+      3. Batch upsert all corporate_actions rows
+    """
     base_url = os.environ.get("SUPABASE_URL", "").rstrip("/")
     if not base_url:
         raise RuntimeError("SUPABASE_URL environment variable not set")
 
     headers = get_supabase_headers()
 
-    for rec in records:
-        # ── 1. Upsert parent announcement ───────────────────────────────────
-        parent_payload = {
+    # ── 1. Batch upsert all parent announcements ─────────────────────────────
+    parent_payloads = [
+        {
             "symbol":            rec["symbol"],
             "company_name":      rec["company_name"],
             "announcement_date": rec["announcement_date"],
             "raw_text":          rec["raw_text"],
         }
-        inserted = supabase_upsert(base_url, "announcements", [parent_payload], headers, on_conflict="symbol,announcement_date")
-        ann_id = inserted[0]["id"]
-        print(f"  ↳ announcement id={ann_id}  {rec['symbol']} {rec['announcement_date']}")
+        for rec in records
+    ]
+    inserted = supabase_upsert(
+        base_url, "announcements", parent_payloads, headers,
+        on_conflict="symbol,announcement_date"
+    )
+    # Build a lookup: (symbol, announcement_date) → id
+    id_map = {(row["symbol"], row["announcement_date"]): row["id"] for row in inserted}
+    for row in inserted:
+        print(f"  ↳ announcement id={row['id']}  {row['symbol']} {row['announcement_date']}")
 
-        # ── 2. Upsert financial results ──────────────────────────────────────
+    # ── 2. Batch upsert all financial results ────────────────────────────────
+    fr_payloads = []
+    for rec in records:
+        ann_id = id_map.get((rec["symbol"], rec["announcement_date"]))
+        if ann_id is None:
+            continue
         for fr in rec.get("financial_results", []):
-            fr_payload = {
-                "announcement_id":        ann_id,
-                "result_type":            fr["result_type"],
-                "result_period":          fr["result_period"],
-                "period_ending":          fr["period_ending"],
-                "profit_before_tax_mln":  _to_numeric(fr["profit_before_tax_mln"]),
-                "profit_after_tax_mln":   _to_numeric(fr["profit_after_tax_mln"]),
-                "eps":                    _to_numeric(fr["eps"]),
-            }
-            supabase_upsert(base_url, "financial_results", [fr_payload], headers, on_conflict="announcement_id,result_type")
+            fr_payloads.append({
+                "announcement_id":       ann_id,
+                "result_type":           fr["result_type"],
+                "result_period":         fr["result_period"],
+                "period_ending":         fr["period_ending"],
+                "profit_before_tax_mln": _to_numeric(fr["profit_before_tax_mln"]),
+                "profit_after_tax_mln":  _to_numeric(fr["profit_after_tax_mln"]),
+                "eps":                   _to_numeric(fr["eps"]),
+            })
+    if fr_payloads:
+        supabase_upsert(
+            base_url, "financial_results", fr_payloads, headers,
+            on_conflict="announcement_id,result_type"
+        )
 
-        # ── 3. Upsert corporate actions (if any) ────────────────────────────
-        ca = rec.get("corporate_actions")
-        if ca:
-            ca_payload = {
-                "announcement_id":   ann_id,
-                "dividend":          ca["dividend"],
-                "bonus":             ca["bonus"],
-                "book_closure_start": ca["book_closure_start"],
-                "book_closure_end":   ca["book_closure_end"],
-                "agm_date":          ca["agm_date"],
-            }
-            supabase_upsert(base_url, "corporate_actions", [ca_payload], headers, on_conflict="announcement_id")
+    # ── 3. Batch upsert all corporate actions ────────────────────────────────
+    ca_payloads = []
+    for rec in records:
+        ann_id = id_map.get((rec["symbol"], rec["announcement_date"]))
+        if ann_id is None or not rec.get("corporate_actions"):
+            continue
+        ca = rec["corporate_actions"]
+        ca_payloads.append({
+            "announcement_id":    ann_id,
+            "dividend":           ca["dividend"],
+            "bonus":              ca["bonus"],
+            "book_closure_start": ca["book_closure_start"],
+            "book_closure_end":   ca["book_closure_end"],
+            "agm_date":           ca["agm_date"],
+        })
+    if ca_payloads:
+        supabase_upsert(
+            base_url, "corporate_actions", ca_payloads, headers,
+            on_conflict="announcement_id"
+        )
 
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -393,6 +424,7 @@ def upsert_records(records):
 # ─────────────────────────────────────────────────────────────────────────────
 
 BACKFILL_START = "2018-01-01"
+DAILY_LOOKBACK_DAYS = 14   # catch late-filed announcements
 
 
 def fetch_symbols_from_db():
@@ -420,17 +452,28 @@ def fetch_symbols_from_db():
     return symbols
 
 
-def run_backfill(upsert=False):
-    end_date = date.today().strftime("%Y-%m-%d")
+def run_backfill(upsert=False, is_daily=False):
+    end_date   = date.today().strftime("%Y-%m-%d")
+    start_date = (
+        (date.today() - timedelta(days=DAILY_LOOKBACK_DAYS)).strftime("%Y-%m-%d")
+        if is_daily else BACKFILL_START
+    )
+    mode = f"daily ({DAILY_LOOKBACK_DAYS}-day window)" if is_daily else "full backfill"
+    print(f"Mode: {mode}  |  Window: {start_date} → {end_date}")
+
     symbols = fetch_symbols_from_db()
     for symbol in symbols:
-        print(f"\n{'─'*50}\nBackfilling {symbol}  {BACKFILL_START} → {end_date}")
-        records = scrape_ksestocks_announcements(symbol, BACKFILL_START, end_date)
-        print(f"  Found {len(records)} announcement(s)")
-        if records and upsert:
-            upsert_records(records)
-        elif records:
-            print(json.dumps(records, indent=2))
+        print(f"\n{'─'*50}\nFetching {symbol}  {start_date} → {end_date}")
+        records = scrape_ksestocks_announcements(symbol, start_date, end_date)
+        if records:
+            print(f"  Found {len(records)} announcement(s)")
+            if upsert:
+                upsert_records(records)   # 3 requests total, not 140
+            else:
+                print("  (Dry run – no upsert performed)")
+        else:
+            print("  No announcements found in this period.")
+        time.sleep(2)   # be polite to ksestocks
 
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -448,11 +491,15 @@ if __name__ == "__main__":
                         help="Write results to Supabase (requires env vars)")
     parser.add_argument("--backfill", action="store_true",
                         help="Run full backfill for all symbols fetched from DB")
+    parser.add_argument("--daily", action="store_true",
+                        help=f"Run incremental sync (last {14} days) for all symbols")
 
     args = parser.parse_args()
 
     if args.backfill:
-        run_backfill(upsert=args.upsert)
+        run_backfill(upsert=args.upsert, is_daily=False)
+    elif args.daily:
+        run_backfill(upsert=args.upsert, is_daily=True)
     elif args.symbol and args.start_date and args.end_date:
         records = scrape_ksestocks_announcements(args.symbol, args.start_date, args.end_date)
         if args.upsert and records:
