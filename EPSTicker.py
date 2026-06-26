@@ -16,6 +16,7 @@ Environment variables required for --upsert:
 """
 
 import argparse
+import logging
 import os
 import sys
 import json
@@ -25,9 +26,20 @@ from bs4 import BeautifulSoup
 from datetime import date, timedelta
 import time
 
+# ─────────────────────────────────────────────────────────────────────────────
+# Logging
+# ─────────────────────────────────────────────────────────────────────────────
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s  %(levelname)-8s  %(message)s",
+    datefmt="%Y-%m-%d %H:%M:%S",
+    stream=sys.stdout,
+)
+log = logging.getLogger(__name__)
+
 
 # ─────────────────────────────────────────────────────────────────────────────
-# Parsing logic (unchanged from original)
+# Parsing logic (unchanged)
 # ─────────────────────────────────────────────────────────────────────────────
 
 def parse_announcement_details(text):
@@ -257,6 +269,25 @@ def _group_and_parse(symbol, rows_data):
     return results
 
 
+# ─────────────────────────────────────────────────────────────────────────────
+# Scraping
+# ─────────────────────────────────────────────────────────────────────────────
+
+SCRAPE_TIMEOUT = 30   # seconds per request
+SCRAPE_RETRIES = 3    # attempts before giving up
+SCRAPE_BACKOFF = 5    # seconds between retries
+
+# One session per process — keeps TCP connections alive across all symbol requests.
+_session = requests.Session()
+_session.headers.update({
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
+    "Accept-Language": "en-US,en;q=0.5",
+    "Referer": "https://www.ksestocks.com/",
+    "Connection": "keep-alive",
+})
+
+
 def scrape_ksestocks_announcements(symbol, start_date, end_date):
     url = "https://www.ksestocks.com/Announcements"
     multipart_form_data = {
@@ -267,20 +298,19 @@ def scrape_ksestocks_announcements(symbol, start_date, end_date):
         "rtdate": (None, end_date),
         "mansear": (None, ""),
     }
-    headers = {
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
-        "Accept-Language": "en-US,en;q=0.5",
-        "Referer": "https://www.ksestocks.com/",
-        "Connection": "keep-alive",
-    }
 
-    try:
-        response = requests.post(url, files=multipart_form_data, headers=headers)
-        response.raise_for_status()
-    except requests.RequestException as e:
-        print(json.dumps({"error": str(e)}), file=sys.stderr)
-        return []
+    response = None
+    for attempt in range(1, SCRAPE_RETRIES + 1):
+        try:
+            response = _session.post(url, files=multipart_form_data, timeout=SCRAPE_TIMEOUT)
+            response.raise_for_status()
+            break
+        except requests.RequestException as e:
+            log.warning("[attempt %d/%d] %s scrape error: %s", attempt, SCRAPE_RETRIES, symbol, e)
+            if attempt < SCRAPE_RETRIES:
+                time.sleep(SCRAPE_BACKOFF * attempt)   # 5s, 10s, …
+            else:
+                return []
 
     soup = BeautifulSoup(response.text, "html.parser")
     rows = soup.find_all("tr", class_="data-tr")
@@ -294,20 +324,21 @@ def scrape_ksestocks_announcements(symbol, start_date, end_date):
             continue
         for br in cols[2].find_all("br"):
             br.replace_with("\n")
-        company_raw = cols[0].get_text(separator=" ", strip=True)
-        date_str = cols[1].get_text(strip=True)
+        company_raw     = cols[0].get_text(separator=" ", strip=True)
+        date_str        = cols[1].get_text(strip=True)
         raw_announcement = cols[2].get_text(separator="\n", strip=True)
-        company_name = (
-            company_raw.split("(")[0].strip() if "(" in company_raw else company_raw
-        )
+        company_name    = company_raw.split("(")[0].strip() if "(" in company_raw else company_raw
         rows_data.append((company_name, date_str, raw_announcement))
 
     return _group_and_parse(symbol, rows_data)
 
 
 # ─────────────────────────────────────────────────────────────────────────────
-# Supabase upsert logic
+# Supabase helpers
 # ─────────────────────────────────────────────────────────────────────────────
+
+SUPABASE_TIMEOUT = 30   # seconds per Supabase REST call
+
 
 def get_supabase_headers():
     key = os.environ.get("SUPABASE_KEY")
@@ -326,10 +357,47 @@ def supabase_upsert(base_url, table, payload, headers, on_conflict=None):
     url = f"{base_url}/rest/v1/{table}"
     if on_conflict:
         url += f"?on_conflict={on_conflict}"
-    resp = requests.post(url, headers=headers, json=payload)
+    resp = requests.post(url, headers=headers, json=payload, timeout=SUPABASE_TIMEOUT)
     if not resp.ok:
         raise RuntimeError(f"Supabase upsert failed [{table}]: {resp.status_code} {resp.text}")
     return resp.json()
+
+
+def fetch_existing_announcements(start_date):
+    """
+    Return a dict { (symbol, announcement_date): announcement_id }
+    for all announcements in the DB on or after start_date.
+
+    This serves two purposes:
+      1. Dedup filter  — skip parent inserts for rows already in the DB.
+      2. ID lookup     — supply announcement_id for child upserts without
+                         needing to re-insert the parent.
+
+    ON CONFLICT in Supabase remains the final safety net for race conditions.
+    """
+    base_url = os.environ.get("SUPABASE_URL", "").rstrip("/")
+    key = os.environ.get("SUPABASE_KEY")
+    if not base_url or not key:
+        raise RuntimeError("SUPABASE_URL and SUPABASE_KEY must be set")
+
+    url = (
+        f"{base_url}/rest/v1/announcements"
+        f"?select=id,symbol,announcement_date"
+        f"&announcement_date=gte.{start_date}"
+    )
+    resp = requests.get(
+        url,
+        headers={"apikey": key, "Authorization": f"Bearer {key}"},
+        timeout=SUPABASE_TIMEOUT,
+    )
+    if not resp.ok:
+        log.warning("Could not fetch existing announcements (%s), skipping dedup", resp.status_code)
+        return {}
+
+    return {
+        (row["symbol"], row["announcement_date"]): row["id"]
+        for row in resp.json()
+    }
 
 
 def _to_numeric(val):
@@ -343,12 +411,19 @@ def _to_numeric(val):
         return None
 
 
-def upsert_records(records):
+def upsert_records(records, existing, stats):
     """
-    Bulk upsert: 3 HTTP requests total per symbol regardless of announcement count.
-      1. Batch upsert all parent announcements → get back ids
-      2. Batch upsert all financial_results rows
-      3. Batch upsert all corporate_actions rows
+    Sync one symbol's announcements to Supabase.
+
+    Flow per record:
+      - Parent already in DB  → reuse cached ID, skip insert, still upsert children.
+      - Parent is new         → bulk insert, store returned ID in cache, upsert children.
+
+    existing: dict { (symbol, announcement_date): id } — mutated in place as
+              new parents are inserted, so the cache stays live across the full run.
+    stats:    dict of run-wide counters, mutated in place.
+
+    ON CONFLICT clauses remain on every table as the DB-level safety net.
     """
     base_url = os.environ.get("SUPABASE_URL", "").rstrip("/")
     if not base_url:
@@ -356,26 +431,50 @@ def upsert_records(records):
 
     headers = get_supabase_headers()
 
-    # ── 1. Batch upsert all parent announcements ─────────────────────────────
-    parent_payloads = [
-        {
-            "symbol":            rec["symbol"],
-            "company_name":      rec["company_name"],
-            "announcement_date": rec["announcement_date"],
-            "raw_text":          rec["raw_text"],
-        }
-        for rec in records
-    ]
-    inserted = supabase_upsert(
-        base_url, "announcements", parent_payloads, headers,
-        on_conflict="symbol,announcement_date"
-    )
-    # Build a lookup: (symbol, announcement_date) → id
-    id_map = {(row["symbol"], row["announcement_date"]): row["id"] for row in inserted}
-    for row in inserted:
-        print(f"  ↳ announcement id={row['id']}  {row['symbol']} {row['announcement_date']}")
+    # ── Partition records into new vs already-known ───────────────────────────
+    new_records      = []
+    existing_records = []
+    for rec in records:
+        key = (rec["symbol"], rec["announcement_date"])
+        if key in existing:
+            existing_records.append(rec)
+            stats["reused"] += 1
+        else:
+            new_records.append(rec)
 
-    # ── 2. Batch upsert all financial results ────────────────────────────────
+    # ── 1. Bulk insert new parent announcements ───────────────────────────────
+    id_map = {}   # (symbol, date) → id, populated below
+
+    if new_records:
+        parent_payloads = [
+            {
+                "symbol":            rec["symbol"],
+                "company_name":      rec["company_name"],
+                "announcement_date": rec["announcement_date"],
+                "raw_text":          rec["raw_text"],
+            }
+            for rec in new_records
+        ]
+        inserted = supabase_upsert(
+            base_url, "announcements", parent_payloads, headers,
+            on_conflict="symbol,announcement_date"
+        )
+        for row in inserted:
+            key = (row["symbol"], row["announcement_date"])
+            id_map[key]    = row["id"]
+            existing[key]  = row["id"]   # ← live cache update
+            stats["inserted"] += 1
+            log.info("  ↳ NEW  id=%-6s  %s  %s", row["id"], row["symbol"], row["announcement_date"])
+    else:
+        log.info("  No new parent announcements — all already in DB.")
+
+    # Log reused IDs (pulled from cache)
+    for rec in existing_records:
+        key = (rec["symbol"], rec["announcement_date"])
+        id_map[key] = existing[key]
+        log.info("  ↳ SKIP id=%-6s  %s  %s (already exists)", existing[key], rec["symbol"], rec["announcement_date"])
+
+    # ── 2. Bulk upsert financial results (new AND existing parents) ───────────
     fr_payloads = []
     for rec in records:
         ann_id = id_map.get((rec["symbol"], rec["announcement_date"]))
@@ -396,8 +495,9 @@ def upsert_records(records):
             base_url, "financial_results", fr_payloads, headers,
             on_conflict="announcement_id,result_type"
         )
+        stats["fr_rows"] += len(fr_payloads)
 
-    # ── 3. Batch upsert all corporate actions ────────────────────────────────
+    # ── 3. Bulk upsert corporate actions (new AND existing parents) ───────────
     ca_payloads = []
     for rec in records:
         ann_id = id_map.get((rec["symbol"], rec["announcement_date"]))
@@ -417,20 +517,21 @@ def upsert_records(records):
             base_url, "corporate_actions", ca_payloads, headers,
             on_conflict="announcement_id"
         )
+        stats["ca_rows"] += len(ca_payloads)
 
 
 # ─────────────────────────────────────────────────────────────────────────────
-# Backfill helpers
+# Backfill / daily run
 # ─────────────────────────────────────────────────────────────────────────────
 
-BACKFILL_START = "2018-01-01"
-DAILY_LOOKBACK_DAYS = 14   # catch late-filed announcements
+BACKFILL_START       = "2018-01-01"
+DAILY_LOOKBACK_DAYS  = 14   # wide enough to catch late-filed announcements
 
 
 def fetch_symbols_from_db():
-    """Pull unique symbols from Supabase via the same RPC your frontend uses."""
+    """Pull unique symbols from Supabase via the same RPC the frontend uses."""
     base_url = os.environ.get("SUPABASE_URL", "").rstrip("/")
-    key = os.environ.get("SUPABASE_KEY")
+    key      = os.environ.get("SUPABASE_KEY")
     if not base_url or not key:
         raise RuntimeError("SUPABASE_URL and SUPABASE_KEY must be set")
 
@@ -442,38 +543,82 @@ def fetch_symbols_from_db():
             "Content-Type": "application/json",
         },
         json={},
+        timeout=SUPABASE_TIMEOUT,
     )
     if not resp.ok:
         raise RuntimeError(f"get_unique_symbols RPC failed: {resp.status_code} {resp.text}")
 
-    rows = resp.json()
+    rows    = resp.json()
     symbols = sorted({row["symbol"].strip().upper() for row in rows if row.get("symbol")})
-    print(f"  Fetched {len(symbols)} unique symbols from DB")
+    log.info("Fetched %d unique symbols from DB", len(symbols))
     return symbols
 
 
 def run_backfill(upsert=False, is_daily=False):
+    run_start  = time.monotonic()
     end_date   = date.today().strftime("%Y-%m-%d")
     start_date = (
         (date.today() - timedelta(days=DAILY_LOOKBACK_DAYS)).strftime("%Y-%m-%d")
         if is_daily else BACKFILL_START
     )
     mode = f"daily ({DAILY_LOOKBACK_DAYS}-day window)" if is_daily else "full backfill"
-    print(f"Mode: {mode}  |  Window: {start_date} → {end_date}")
+    log.info("Mode: %s  |  Window: %s → %s", mode, start_date, end_date)
 
     symbols = fetch_symbols_from_db()
+
+    # Single upfront fetch → { (symbol, date): id }
+    # Mutated live as new parents are inserted during the run.
+    existing = fetch_existing_announcements(start_date) if upsert else {}
+    log.info("%d existing announcement(s) in DB for this window", len(existing))
+
+    # Run-wide counters
+    stats = {
+        "scraped":  0,   # total announcement records scraped
+        "inserted": 0,   # new parent rows inserted
+        "reused":   0,   # parents skipped (ID reused from cache)
+        "fr_rows":  0,   # financial_result rows upserted
+        "ca_rows":  0,   # corporate_action rows upserted
+    }
+    errors = []
+
     for symbol in symbols:
-        print(f"\n{'─'*50}\nFetching {symbol}  {start_date} → {end_date}")
-        records = scrape_ksestocks_announcements(symbol, start_date, end_date)
-        if records:
-            print(f"  Found {len(records)} announcement(s)")
-            if upsert:
-                upsert_records(records)   # 3 requests total, not 140
+        log.info("─" * 50)
+        log.info("Fetching %s  %s → %s", symbol, start_date, end_date)
+        try:
+            records = scrape_ksestocks_announcements(symbol, start_date, end_date)
+            if records:
+                stats["scraped"] += len(records)
+                log.info("Found %d announcement(s)", len(records))
+                if upsert:
+                    upsert_records(records, existing, stats)
+                else:
+                    log.info("Dry run – no upsert performed")
             else:
-                print("  (Dry run – no upsert performed)")
-        else:
-            print("  No announcements found in this period.")
+                log.info("No announcements found in this period.")
+        except Exception as e:
+            log.error("✗ ERROR for %s: %s", symbol, e)
+            errors.append((symbol, str(e)))
         time.sleep(2)   # be polite to ksestocks
+
+    # ── Final summary ─────────────────────────────────────────────────────────
+    elapsed     = time.monotonic() - run_start
+    total_syms  = len(symbols)
+    failed_syms = len(errors)
+    ok_syms     = total_syms - failed_syms
+
+    log.info("═" * 50)
+    log.info("Run complete in %.0fs", elapsed)
+    log.info("  Symbols          : %d processed, %d failed", ok_syms, failed_syms)
+    log.info("  Announcements    : %d scraped", stats["scraped"])
+    log.info("  Parent rows      : %d inserted, %d reused (skipped)", stats["inserted"], stats["reused"])
+    log.info("  Financial results: %d rows upserted", stats["fr_rows"])
+    log.info("  Corporate actions: %d rows upserted", stats["ca_rows"])
+
+    if errors:
+        log.error("%d symbol(s) failed:", failed_syms)
+        for sym, err in errors:
+            log.error("  %s: %s", sym, err)
+        sys.exit(1)
 
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -484,15 +629,15 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(
         description="Scrape KSE Financial Announcements → Supabase"
     )
-    parser.add_argument("symbol", nargs="?", help="Company symbol (e.g. HCAR)")
+    parser.add_argument("symbol",     nargs="?", help="Company symbol (e.g. HCAR)")
     parser.add_argument("start_date", nargs="?", help="Start date YYYY-MM-DD")
-    parser.add_argument("end_date", nargs="?", help="End date YYYY-MM-DD")
-    parser.add_argument("--upsert", action="store_true",
+    parser.add_argument("end_date",   nargs="?", help="End date YYYY-MM-DD")
+    parser.add_argument("--upsert",   action="store_true",
                         help="Write results to Supabase (requires env vars)")
     parser.add_argument("--backfill", action="store_true",
-                        help="Run full backfill for all symbols fetched from DB")
-    parser.add_argument("--daily", action="store_true",
-                        help=f"Run incremental sync (last {14} days) for all symbols")
+                        help="Full backfill from 2018 for all symbols in DB")
+    parser.add_argument("--daily",    action="store_true",
+                        help=f"Incremental sync (last {DAILY_LOOKBACK_DAYS} days) for all symbols")
 
     args = parser.parse_args()
 
@@ -503,7 +648,10 @@ if __name__ == "__main__":
     elif args.symbol and args.start_date and args.end_date:
         records = scrape_ksestocks_announcements(args.symbol, args.start_date, args.end_date)
         if args.upsert and records:
-            upsert_records(records)
+            # Single-symbol path: build a minimal existing cache from DB
+            existing = fetch_existing_announcements(args.start_date)
+            stats    = {"scraped": 0, "inserted": 0, "reused": 0, "fr_rows": 0, "ca_rows": 0}
+            upsert_records(records, existing, stats)
         else:
             print(json.dumps(records, indent=4))
     else:

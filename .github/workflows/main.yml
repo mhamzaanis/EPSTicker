@@ -1,10 +1,8 @@
 name: KSE Announcements Sync
-
 on:
   # ── Daily run: 07:30 PKT (UTC+5) — well after PSX close ──────────────────
   schedule:
     - cron: "30 2 * * *"
-
   # ── Manual trigger ────────────────────────────────────────────────────────
   workflow_dispatch:
     inputs:
@@ -16,25 +14,20 @@ on:
         description: "Single symbol to scrape (leave empty for all)"
         required: false
         default: ""
-
 jobs:
   sync:
     runs-on: ubuntu-latest
     timeout-minutes: 120
-
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
           cache: pip
-
       - name: Install dependencies
-        run: pip install requests beautifulsoup4
-
+        run: pip install -r requirements.txt
       # ── Full backfill (manual, backfill=true) ────────────────────────────
       - name: Full backfill
         if: github.event_name == 'workflow_dispatch' && github.event.inputs.backfill == 'true'
@@ -42,7 +35,6 @@ jobs:
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
           SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
         run: python EPSTicker.py --backfill --upsert
-
       # ── Daily incremental (cron or manual with no symbol) ────────────────
       - name: Daily sync
         if: |
@@ -54,7 +46,6 @@ jobs:
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
           SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
         run: python EPSTicker.py --daily --upsert
-
       # ── Single symbol (manual, symbol set) ──────────────────────────────
       - name: Single symbol sync
         if: |
