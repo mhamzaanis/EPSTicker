@@ -32,7 +32,7 @@ jobs:
           python-version: "3.11"
 
       - name: Install dependencies
-        run: pip install requests beautifulsoup4
+        run: pip install requests beautifulsoup4 supabase
 
       # ── Full backfill (manual trigger only) ─────────────────────────────
       - name: Full backfill
@@ -43,7 +43,7 @@ jobs:
         run: |
           python EPSTicker.py --backfill --upsert
 
-      # ── Daily incremental: yesterday → today ─────────────────────────────
+      # ── Daily incremental: utilizes your script's automatic --daily flag ──
       - name: Daily sync (all symbols)
         if: |
           github.event_name == 'schedule' ||
@@ -54,22 +54,8 @@ jobs:
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
           SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
         run: |
-          START=$(date -d "yesterday" +%Y-%m-%d)
-          END=$(date +%Y-%m-%d)
-          echo "Syncing $START → $END for all symbols"
-          python - <<'EOF'
-          import subprocess, sys
-          from kse_scraper import BACKFILL_SYMBOLS
-          import datetime
-
-          start = (datetime.date.today() - datetime.timedelta(days=1)).isoformat()
-          end   = datetime.date.today().isoformat()
-          for sym in BACKFILL_SYMBOLS:
-              subprocess.run(
-                  [sys.executable, "kse_scraper.py", sym, start, end, "--upsert"],
-                  check=True
-              )
-          EOF
+          echo "Running daily fundamental sync for all active symbols in DB..."
+          python EPSTicker.py --daily --upsert
 
       # ── Single symbol (manual trigger with symbol set) ───────────────────
       - name: Single symbol sync
@@ -83,4 +69,4 @@ jobs:
         run: |
           START=$(date -d "2018-01-01" +%Y-%m-%d)
           END=$(date +%Y-%m-%d)
-          python kse_scraper.py ${{ github.event.inputs.symbol }} $START $END --upsert
+          python EPSTicker.py ${{ github.event.inputs.symbol }} $START $END --upsert
