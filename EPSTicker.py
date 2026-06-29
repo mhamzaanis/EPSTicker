@@ -357,7 +357,7 @@ def supabase_upsert(base_url, table, payload, headers, on_conflict=None):
     url = f"{base_url}/rest/v1/{table}"
     if on_conflict:
         url += f"?on_conflict={on_conflict}"
-    resp = requests.post(url, headers=headers, json=payload, timeout=SUPABASE_TIMEOUT)
+    resp = _session.post(url, headers=headers, json=payload, timeout=SUPABASE_TIMEOUT)
     if not resp.ok:
         raise RuntimeError(f"Supabase upsert failed [{table}]: {resp.status_code} {resp.text}")
     return resp.json()
@@ -535,8 +535,8 @@ def fetch_symbols_from_db():
     if not base_url or not key:
         raise RuntimeError("SUPABASE_URL and SUPABASE_KEY must be set")
 
-    resp = requests.post(
-        f"{base_url}/rest/v1/rpc/get_unique_symbols",
+    resp = _session.post(
+        f"{base_url}/rest/v1/rpc/get_scraper_symbols",
         headers={
             "apikey": key,
             "Authorization": f"Bearer {key}",
@@ -546,7 +546,7 @@ def fetch_symbols_from_db():
         timeout=SUPABASE_TIMEOUT,
     )
     if not resp.ok:
-        raise RuntimeError(f"get_unique_symbols RPC failed: {resp.status_code} {resp.text}")
+        raise RuntimeError(f"get_scraper_symbols RPC failed: {resp.status_code} {resp.text}")
 
     rows    = resp.json()
     symbols = sorted({row["symbol"].strip().upper() for row in rows if row.get("symbol")})
