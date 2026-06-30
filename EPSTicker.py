@@ -197,11 +197,26 @@ def _group_and_parse(symbol, rows_data):
             return None
 
     def clean_period_date(date_str):
+        """
+        Parse DD/MM/YYYY dates from ksestocks, tolerating typos like '33/03/2021'.
+        Clamps the day to the last valid day of the given month before parsing.
+        Returns None only if the string is missing or the year/month are bogus.
+        """
         if not date_str:
             return None
         try:
-            return datetime.strptime(date_str, "%d/%m/%Y").strftime("%Y-%m-%d")
-        except ValueError:
+            parts = date_str.strip().split("/")
+            if len(parts) != 3:
+                return None
+            day, month, year = int(parts[0]), int(parts[1]), int(parts[2])
+            if not (1 <= month <= 12 and year >= 1900):
+                return None
+            # Clamp day to the real last day of the month
+            import calendar
+            last_day = calendar.monthrange(year, month)[1]
+            day = max(1, min(day, last_day))
+            return datetime(year, month, day).strftime("%Y-%m-%d")
+        except (ValueError, IndexError):
             return None
 
     # ── First pass: parse each raw row independently ────────────────────────
@@ -242,6 +257,14 @@ def _group_and_parse(symbol, rows_data):
 
         iso_announcement_date = clean_db_date(grp["announcement_date"])
         iso_period_ending     = clean_period_date(flat_data["period_ending"])
+
+        # period_ending is NOT NULL in the DB. If the parsed date is still None
+        # (e.g. ksestocks has a typo like '33/03/2021' with an unrecoverable
+        # year/month), fall back to announcement_date so the row is never dropped.
+        if iso_period_ending is None:
+            iso_period_ending = iso_announcement_date
+            log.warning("  ⚠ period_ending unparseable for %s ann=%s raw=%r — using announcement_date as fallback",
+                        sym, iso_announcement_date, flat_data["period_ending"])
 
         parent_record = {
             "symbol":            sym,
