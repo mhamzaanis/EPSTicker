@@ -204,27 +204,51 @@ def _group_and_parse(symbol, rows_data):
         except ValueError:
             return None
 
-    groups = OrderedDict()
+    # ── First pass: parse each raw row independently ────────────────────────
+    # Each (company, date, raw) triple is one period filing. We parse them all
+    # first so we can group by (symbol, period_ending) — the true natural key.
+    # A company can file multiple periods on the same announcement_date (e.g.
+    # SNGP filed YEAR + 9M + HY + Q1 all on Nov 3, 2025).
+    parsed_rows = []
     for company_name, date_str, raw in rows_data:
-        key = (symbol.upper(), date_str)
+        flat = parse_announcement_details(raw)
+        parsed_rows.append((company_name, date_str, raw, flat))
+
+    # ── Second pass: group by (symbol, period_ending) ────────────────────────
+    # If two rows share the same period_ending, merge their raws (handles the
+    # rare case where a single period is split across two HTML table rows).
+    groups = OrderedDict()
+    for company_name, date_str, raw, flat in parsed_rows:
+        iso_period_ending = clean_period_date(flat["period_ending"])
+        # Fall back to announcement_date if period_ending is missing
+        key = (symbol.upper(), iso_period_ending or date_str)
         if key not in groups:
-            groups[key] = {"company_name": company_name, "raws": [raw]}
+            groups[key] = {
+                "company_name":      company_name,
+                "announcement_date": date_str,
+                "raws":              [raw],
+                "flat":              flat,
+            }
         else:
+            # Same period filed again — merge raws and re-parse combined text
             groups[key]["raws"].append(raw)
+            combined = "\n---\n".join(groups[key]["raws"])
+            groups[key]["flat"] = parse_announcement_details(combined)
 
     results = []
-    for (sym, date_str), grp in groups.items():
+    for (sym, period_key), grp in groups.items():
         combined_raw = "\n---\n".join(grp["raws"])
-        flat_data = parse_announcement_details(combined_raw)
+        flat_data    = grp["flat"]
 
-        iso_announcement_date = clean_db_date(date_str)
-        iso_period_ending = clean_period_date(flat_data["period_ending"])
+        iso_announcement_date = clean_db_date(grp["announcement_date"])
+        iso_period_ending     = clean_period_date(flat_data["period_ending"])
 
         parent_record = {
-            "symbol": sym,
-            "company_name": grp["company_name"],
+            "symbol":            sym,
+            "company_name":      grp["company_name"],
             "announcement_date": iso_announcement_date,
-            "raw_text": combined_raw,
+            "period_ending":     iso_period_ending,   # ← new field for upsert key
+            "raw_text":          combined_raw,
             "financial_results": [],
             "corporate_actions": None,
         }
@@ -357,7 +381,7 @@ def supabase_upsert(base_url, table, payload, headers, on_conflict=None):
     url = f"{base_url}/rest/v1/{table}"
     if on_conflict:
         url += f"?on_conflict={on_conflict}"
-    resp = _session.post(url, headers=headers, json=payload, timeout=SUPABASE_TIMEOUT)
+    resp = requests.post(url, headers=headers, json=payload, timeout=SUPABASE_TIMEOUT)
     if not resp.ok:
         raise RuntimeError(f"Supabase upsert failed [{table}]: {resp.status_code} {resp.text}")
     return resp.json()
@@ -382,7 +406,7 @@ def fetch_existing_announcements(start_date):
 
     url = (
         f"{base_url}/rest/v1/announcements"
-        f"?select=id,symbol,announcement_date"
+        f"?select=id,symbol,announcement_date,period_ending"
         f"&announcement_date=gte.{start_date}"
     )
     resp = requests.get(
@@ -395,7 +419,7 @@ def fetch_existing_announcements(start_date):
         return {}
 
     return {
-        (row["symbol"], row["announcement_date"]): row["id"]
+        (row["symbol"], row["period_ending"] or row["announcement_date"]): row["id"]
         for row in resp.json()
     }
 
@@ -435,7 +459,9 @@ def upsert_records(records, existing, stats):
     new_records      = []
     existing_records = []
     for rec in records:
-        key = (rec["symbol"], rec["announcement_date"])
+        # Key on (symbol, period_ending) — the true unique key post-migration.
+        # Falls back to announcement_date for records with no period_ending.
+        key = (rec["symbol"], rec.get("period_ending") or rec["announcement_date"])
         if key in existing:
             existing_records.append(rec)
             stats["reused"] += 1
@@ -451,33 +477,34 @@ def upsert_records(records, existing, stats):
                 "symbol":            rec["symbol"],
                 "company_name":      rec["company_name"],
                 "announcement_date": rec["announcement_date"],
+                "period_ending":     rec.get("period_ending"),
                 "raw_text":          rec["raw_text"],
             }
             for rec in new_records
         ]
         inserted = supabase_upsert(
             base_url, "announcements", parent_payloads, headers,
-            on_conflict="symbol,announcement_date"
+            on_conflict="symbol,period_ending"
         )
         for row in inserted:
-            key = (row["symbol"], row["announcement_date"])
+            key = (row["symbol"], row.get("period_ending") or row["announcement_date"])
             id_map[key]    = row["id"]
             existing[key]  = row["id"]   # ← live cache update
             stats["inserted"] += 1
-            log.info("  ↳ NEW  id=%-6s  %s  %s", row["id"], row["symbol"], row["announcement_date"])
+            log.info("  ↳ NEW  id=%-6s  %s  period=%s", row["id"], row["symbol"], row.get("period_ending"))
     else:
         log.info("  No new parent announcements — all already in DB.")
 
     # Log reused IDs (pulled from cache)
     for rec in existing_records:
-        key = (rec["symbol"], rec["announcement_date"])
+        key = (rec["symbol"], rec.get("period_ending") or rec["announcement_date"])
         id_map[key] = existing[key]
-        log.info("  ↳ SKIP id=%-6s  %s  %s (already exists)", existing[key], rec["symbol"], rec["announcement_date"])
+        log.info("  ↳ SKIP id=%-6s  %s  period=%s (already exists)", existing[key], rec["symbol"], rec.get("period_ending"))
 
     # ── 2. Bulk upsert financial results (new AND existing parents) ───────────
     fr_payloads = []
     for rec in records:
-        ann_id = id_map.get((rec["symbol"], rec["announcement_date"]))
+        ann_id = id_map.get((rec["symbol"], rec.get("period_ending") or rec["announcement_date"]))
         if ann_id is None:
             continue
         for fr in rec.get("financial_results", []):
@@ -500,7 +527,7 @@ def upsert_records(records, existing, stats):
     # ── 3. Bulk upsert corporate actions (new AND existing parents) ───────────
     ca_payloads = []
     for rec in records:
-        ann_id = id_map.get((rec["symbol"], rec["announcement_date"]))
+        ann_id = id_map.get((rec["symbol"], rec.get("period_ending") or rec["announcement_date"]))
         if ann_id is None or not rec.get("corporate_actions"):
             continue
         ca = rec["corporate_actions"]
@@ -535,7 +562,7 @@ def fetch_symbols_from_db():
     if not base_url or not key:
         raise RuntimeError("SUPABASE_URL and SUPABASE_KEY must be set")
 
-    resp = _session.post(
+    resp = requests.post(
         f"{base_url}/rest/v1/rpc/get_scraper_symbols",
         headers={
             "apikey": key,
